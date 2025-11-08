@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-P63W7K9Z");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Planes de Inspección - TuDepaOK</title>
+    <meta name="description" content="Conoce nuestros planes de inspección profesional de departamentos en Lima. Plan Full y Plan Básico">
+    <meta name="keywords" content="tudepaok, planes, inspección, departamento, lima, plan full, plan básico">
+    <meta name="author" content="sarone">
+    <link href="css/style-min.css" rel="stylesheet" media="all">
+    <link href="css/style-add.css" rel="stylesheet" media="all">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <style>
+      body {
+        background: #f5f5f5;
+      }
+      
+      .btn-send {
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        font-size: 1rem;
+        font-weight: 600;
+        border: 0;
+        border-radius: 5px;
+        padding: 1.1em 2.28em 1em;
+        background: #ff9527;
+        color: #fff;
+        transition: all 0.3s ease;
+      }
+      .btn-send:hover {
+        background: #0d0d0d;
+        color: #f8f4f4;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      }
+      
+      /* Hero Section */
+      .hero-planes {
+        background: white;
+        padding: 80px 0 60px;
+        text-align: center;
+        border-bottom: 3px solid #ff9527;
+      }
+      
+      .hero-planes h1 {
+        font-size: 2.8rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #6f6f6f;
+      }
+      
+      .hero-planes p {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+        color: #6f6f6f;
+      }
+      
+      .hero-planes .contact-info {
+        margin-top: 30px;
+        font-size: 1.2rem;
+      }
+      
+      .hero-planes .contact-info a {
+        color: #ff9527;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      
+      .hero-planes .contact-info a:hover {
+        color: #f49937;
+      }
+      
+      /* Beneficios Section */
+      .beneficios-grid {
+        padding: 60px 0;
+        background: white;
+      }
+      
+      .beneficio-card {
+        text-align: center;
+        padding: 30px 20px;
+        margin-bottom: 30px;
+        background: #f9f9f9;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        height: 100%;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      }
+      
+      .beneficio-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      }
+      
+      .beneficio-card .icon {
+        font-size: 3rem;
+        color: #f49937;
+        margin-bottom: 20px;
+      }
+      
+      .beneficio-card h3 {
+        color: #f49937;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      
+      .beneficio-card p {
+        color: #333;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+      
+      /* Plan Cards */
+      .planes-section {
+        padding: 60px 0;
+        background: #f5f5f5;
+      }
+      
+      .plan-card {
+        background: white;
+        border-radius: 15px;
+        padding: 40px 30px;
+        margin-bottom: 40px;
+        box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .plan-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(90deg, #f49937, #ff9527);
+      }
+      
+      .plan-badge {
+        background: #ff9527;
+        display: inline-block;
+        padding: 8px 20px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #fff;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      
+      .plan-title {
+        font-size: 2rem;
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      
+      .plan-description {
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+      
+      .plan-features {
+        margin-top: 30px;
+      }
+      
+      .feature-group {
+        margin-bottom: 30px;
+      }
+      
+      .feature-group h4 {
+        color: #f49937;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+      }
+      
+      .feature-group h4 img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+      
+      .feature-list {
+        list-style: none;
+        padding-left: 0;
+      }
+      
+      .feature-list li {
+        padding: 8px 0 8px 35px;
+        position: relative;
+        color: #444;
+        line-height: 1.6;
+        font-size: 1rem;
+      }
+      
+      .feature-list li:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 13px;
+        width: 20px;
+        height: 20px;
+        background-image: url('1762561418_texto-ok-f-1-1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      
+      /* Comparison Section */
+      .comparison-section {
+        padding: 60px 0;
+        background: white;
+      }
+      
+      .comparison-table {
+        background: white;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+      }
+      
+      .comparison-row {
+        display: flex;
+        padding: 15px 0;
+        border-bottom: 1px solid #eee;
+        align-items: center;
+      }
+      
+      .comparison-row:last-child {
+        border-bottom: none;
+      }
+      
+      .comparison-feature {
+        flex: 1;
+        font-weight: 500;
+        color: #333;
+      }
+      
+      .comparison-check {
+        width: 80px;
+        text-align: center;
+      }
+      
+      .comparison-check img {
+        width: 25px;
+        height: 25px;
+      }
+      
+      /* CTA Section */
+      .cta-section {
+        background: white;
+        padding: 60px 0;
+        text-align: center;
+        border-top: 3px solid #ff9527;
+      }
+      
+      .cta-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: #6f6f6f;
+      }
+      
+      .cta-section p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: #6f6f6f;
+      }
+      
+      .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      
+      .btn-primary {
+        background: #ff9527;
+        color: white;
+        padding: 15px 40px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        display: inline-block;
+        border: 2px solid #ff9527;
+      }
+      
+      .btn-primary:hover {
+        background: #f49937;
+        border-color: #f49937;
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(255, 149, 39, 0.3);
+      }
+      
+      .btn-secondary {
+        background: white;
+        color: #ff9527;
+        padding: 15px 40px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        display: inline-block;
+        border: 2px solid #ff9527;
+      }
+      
+      .btn-secondary:hover {
+        background: #ff9527;
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(255, 149, 39, 0.3);
+      }
+      
+      @media (max-width: 768px) {
+        .hero-planes h1 {
+          font-size: 2rem;
+        }
+        
+        .hero-planes p {
+          font-size: 1rem;
+        }
+        
+        .plan-card {
+          padding: 25px 20px;
+        }
+        
+        .plan-title {
+          font-size: 1.5rem;
+        }
+        
+        .feature-group h4 {
+          font-size: 1.1rem;
+        }
+        
+        .cta-section h2 {
+          font-size: 1.8rem;
+        }
+        
+        .cta-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        .btn-primary, .btn-secondary {
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P63W7K9Z" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <!-- Loader -->
+    <div class="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
+
+    <div class="wrapper boxed">
+      <!-- Content CLick Capture-->
+      <div class="click-capture"></div>
+
+      <!-- Sidebar Menu-->
+      <div class="menu">
+        <span class="close-menu icon-cross right-boxed"></span>
+        <div class="menu-lang right-boxed">
+          <a href="" class="active">Es</a>
+        </div>
+        <nav class="nav mobile-menu">
+          <ul class="menu-list right-boxed">
+            <li>
+              <a href="index.htm#main">Inicio</a>
+            </li>
+            <li>
+              <a href="index.htm#about">Nosotros</a>
+            </li>
+            <li>
+              <a href="index.htm#proceso">Procesos</a>
+            </li>
+            <li>
+              <a href="index.htm#planes">Planes</a>
+            </li>
+            <li>
+              <a href="index.htm#clientes">Clientes</a>
+            </li>
+            <li>
+              <a href="index.htm#contacts">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-footer right-boxed">
+          <div class="social-list">
+            <a href="https://www.tiktok.com/@tudepaok?_t=8k5IpJ04zeY&_r=1" class="icon fa-brands fa-tiktok" target="_blank" aria-label="tiktok">
+              <img src="images/image-icons/tiktok.png" style="width: 24px" alt="tiktok">
+            </a>
+            <a href="#" class="icon _wasap" style="font-size: 20px; padding-top: 4px" target="_blank" aria-label="whatsap">
+              <img src="images/image-icons/whatsap.png" style="margin-top: -5px" alt="whatsap">
+            </a>
+            <a href="https://www.facebook.com/tudepaokpe" class="icon ion-social-facebook" target="_blank" aria-label="facebook"></a>
+            <a href="https://www.instagram.com/tudepaok.peru" class="icon ion-social-instagram" target="_blank" aria-label="instagram"></a>
+            <a href="https://www.linkedin.com/in/tudepaok" class="icon ion-social-linkedin" target="_blank" aria-label="linkedin"></a>
+          </div>
+          <div class="copy">© TuDepaOK 2025. All Rights Reseverd</div>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <header class="navbar boxed js-navbar">
+        <a class="brand" href="index.htm">
+          <img alt="TuDepaOK" src="images/logo.png" width="80" height="69" loading="lazy">
+        </a>
+
+        <!-- Phone -->
+        <address class="navbar-address visible-md visible-xl">
+          contacto: <span class="text-dark">51 983 893 067</span>
+        </address>
+
+        <!-- Button -->
+        <button id="btnNavBar" type="button" title="NavBar" class="navbar-toggle hidden-lg" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <!-- Social -->
+        <div class="social-list hidden-xs">
+          <a href="https://www.tiktok.com/@tudepaok?_t=8k5IpJ04zeY&_r=1" class="icon fa-brands fa-tiktok" style="font-size: 20px; padding-top: 4px" target="_blank" aria-label="tiktok">
+            <img src="images/image-icons/tiktok.png" style="width: 24px" alt="tiktok">
+          </a>
+          <a href="#" class="icon _wasap" style="font-size: 20px; padding-top: 4px" target="_blank" aria-label="whatsap">
+            <img src="images/image-icons/whatsap.png" style="margin-top: -5px" alt="whatsap">
+          </a>
+          <a href="https://www.facebook.com/tudepaokpe" class="icon ion-social-facebook" target="_blank" aria-label="facebook"></a>
+          <a href="https://www.instagram.com/tudepaok.peru" class="icon ion-social-instagram" target="_blank" aria-label="instagram"></a>
+          <a href="https://www.linkedin.com/in/tudepaok" class="icon ion-social-linkedin" target="_blank" aria-label="linkedin"></a>
+        </div>
+
+        <!-- Spacer -->
+        <div class="navbar-spacer pull-right visible-lg"></div>
+
+        <!-- Navigation -->
+        <nav class="nav navigation visible-lg">
+          <ul>
+            <li>
+              <a href="index.htm#main">Inicio</a>
+            </li>
+            <li>
+              <a href="index.htm#about">Nosotros</a>
+            </li>
+            <li>
+              <a href="index.htm#proceso">Proceso</a>
+            </li>
+            <li>
+              <a href="index.htm#planes">Planes</a>
+            </li>
+            <li>
+              <a href="index.htm#clientes">Clientes</a>
+            </li>
+            <li>
+              <a href="index.htm#contacts">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero-planes">
+        <div class="container">
+          <h1>¿Quieres disfrutar tu nuevo depa con tranquilidad?</h1>
+          <p>Nosotros te ayudamos</p>
+          <div class="contact-info">
+            <p><a href="http://www.tudepaok.pe">www.tudepaok.pe</a></p>
+            <p><strong>983 893 067</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Beneficios Section -->
+      <section class="beneficios-grid">
+        <div class="container">
+          <h2 class="section-title section-about-title tituloMonserrat" style="text-align: center; margin-bottom: 50px;">
+            ¿Por qué elegirnos?
+          </h2>
+          
+          <div class="row">
+            <div class="col-md-4">
+              <div class="beneficio-card">
+                <div class="icon">
+                  <span class="icon-users"></span>
+                </div>
+                <h3>Asesoría Completa</h3>
+                <p>Te guiamos antes, durante y después de la inspección. Si hay problemas con la inmobiliaria, te ayudamos a resolverlos.</p>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="beneficio-card">
+                <div class="icon">
+                  <span class="icon-document"></span>
+                </div>
+                <h3>Revisión de Contrato</h3>
+                <p>Comparamos lo que firmaste con lo que realmente recibes. Si hay diferencias, te orientamos para reclamar.</p>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="beneficio-card">
+                <div class="icon">
+                  <span class="icon-trophy"></span>
+                </div>
+                <h3>Profesionales Expertos</h3>
+                <p>Arquitectos colegiados y especialistas con experiencia en el sector inmobiliario.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-4">
+              <div class="beneficio-card">
+                <div class="icon">
+                  <span class="icon-check"></span>
+                </div>
+                <h3>Informe 100% Transparente</h3>
+                <p>No trabajamos con inmobiliarias. Nuestro informe es completo, objetivo y sin conflictos de interés.</p>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="beneficio-card">
+                <div class="icon">
+                  <span class="icon-clock"></span>
+                </div>
+                <h3>Entrega Rápida</h3>
+                <p>Informe con validez legal entregado en solo 2 horas.</p>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="beneficio-card">
+                <div class="icon">
+                  <span class="icon-tools"></span>
+                </div>
+                <h3>Tecnología de Punta</h3>
+                <p>Herramientas especializadas importadas de USA para una inspección precisa y confiable.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PLAN FULL -->
+      <section id="plan-full" class="planes-section">
+        <div class="container">
+          <div class="plan-card">
+            <div class="plan-badge">PLAN FULL</div>
+            <h2 class="plan-title">Inspección Integral Completa</h2>
+            <p class="plan-description">
+              <strong>Desde S/649.00</strong> - Realizamos una inspección integral con el mismo rigor como si se tratara de nuestro propio departamento.
+            </p>
+            
+            <div class="plan-features">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="feature-group">
+                    <h4>
+                      <img src="1762561418_texto-ok-f-1-1.png" alt="">
+                      Muros y Paredes
+                    </h4>
+                    <ul class="feature-list">
+                      <li>Detección de fisuras, grietas y bultos</li>
+                      <li>Rajaduras e imperfecciones estructurales</li>
+                      <li>Verificación de alineamiento y verticalidad</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="feature-group">
+                    <h4>
+                      <img src="1762561418_texto-ok-f-1-2.png" alt="">
+                      Mediciones Exactas
+                    </h4>
+                    <ul class="feature-list">
+                      <li>Levantamiento de todas las medidas del inmueble</li>
+                      <li>Comparación con contrato firmado</li>
+                      <li>Identificación de diferencias de metraje</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="feature-group">
+                    <h4>
+                      <img src="1762561418_texto-ok-f-1-1.png" alt="">
+                      Instalaciones Eléctricas
+                    </h4>
+                    <ul class="feature-list">
+                      <li>Funcionamiento de interruptores y tomacorrientes</li>
+                      <li>Verificación de tablero, voltajes y llaves térmicas</li>
+                      <li>Detección de fugas o conexiones mal instaladas</li>
+                      <li>Sistema eléctrico seguro y funcional</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="col-md-6">
+                  <div class="feature-group">
+                    <h4>
+                      <img src="1762561418_texto-ok-f-1-2.png" alt="">
+                      Acabados de Arquitectura
+                    </h4>
+                    <ul class="feature-list">
+                      <li>Comparación con cuadro de acabados firmado</li>
+                      <li>Pisos: cerámico, porcelanato, vinil, laminado, SPC</li>
+                      <li>Paredes y techos: pintura, empastado, solaqueo</li>
+                      <li>Carpintería: puertas, ventanas, closets, muebles</li>
+                      <li>Detección de cerámicos mal instalados</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="feature-group">
+                    <h4>
+                      <img src="1762561418_texto-ok-f-1-1.png" alt="">
+                      Instalaciones Sanitarias
+                    </h4>
+                    <ul class="feature-list">
+                      <li>Revisión de griferías, lavatorios e inodoros</li>
+                      <li>Detección de fugas con scanner especializado</li>
+                      <li>Verificación de pendientes en duchas</li>
+                      <li>Drenajes y sumideros</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="feature-group">
+                    <h4>
+                      <img src="1762561418_texto-ok-f-1-2.png" alt="">
+                      Extras
+                    </h4>
+                    <ul class="feature-list">
+                      <li>Prueba de humedad ambiental con medidor digital</li>
+                      <li>Instalaciones de gas: válvulas y conexiones</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PLAN BÁSICO -->
+      <section id="plan-basico" class="planes-section" style="background: white;">
+        <div class="container">
+          <div class="plan-card">
+            <div class="plan-badge">PLAN BÁSICO</div>
+            <h2 class="plan-title">Inspección Esencial</h2>
+            <p class="plan-description">
+              <strong>Desde S/449.00</strong> - Inspección enfocada en las instalaciones fundamentales de tu departamento.
+            </p>
+            
+            <div class="plan-features">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="feature-group">
+                    <h4>
+                      <img src="1762561418_texto-ok-f-1-1.png" alt="">
+                      Instalaciones Eléctricas
+                    </h4>
+                    <ul class="feature-list">
+                      <li>Funcionamiento de interruptores y tomacorrientes</li>
+                      <li>Verificación de tablero, voltajes y llaves térmicas</li>
+                      <li>Detección de fugas o conexiones mal instaladas</li>
+                      <li>Sistema eléctrico seguro y funcional</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="col-md-6">
+                  <div class="feature-group">
+                    <h4>
+                      <img src="1762561418_texto-ok-f-1-2.png" alt="">
+                      Instalaciones Sanitarias
+                    </h4>
+                    <ul class="feature-list">
+                      <li>Revisión de griferías, lavatorios e inodoros</li>
+                      <li>Detección de fugas con scanner especializado</li>
+                      <li>Verificación de pendientes y empozamientos</li>
+                      <li>Drenajes y sumideros</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="feature-group">
+                    <h4>
+                      <img src="1762561418_texto-ok-f-1-1.png" alt="">
+                      Prueba de Humedad
+                    </h4>
+                    <ul class="feature-list">
+                      <li>Medidor digital para detectar humedad ambiental</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Comparison Section -->
+      <section class="comparison-section">
+        <div class="container">
+          <h2 class="section-title section-about-title tituloMonserrat" style="text-align: center; margin-bottom: 50px;">
+            Comparativa de Planes
+          </h2>
+          
+          <div class="comparison-table">
+            <div class="comparison-row" style="background: #f5f5f5; font-weight: bold;">
+              <div class="comparison-feature">Verificación</div>
+              <div class="comparison-check">Plan Básico</div>
+              <div class="comparison-check">Plan Full</div>
+            </div>
+            
+            <div class="comparison-row">
+              <div class="comparison-feature">Instalaciones Eléctricas</div>
+              <div class="comparison-check"><img src="1762561418_texto-ok-f-1-1.png" alt="check"></div>
+              <div class="comparison-check"><img src="1762561418_texto-ok-f-1-1.png" alt="check"></div>
+            </div>
+            
+            <div class="comparison-row">
+              <div class="comparison-feature">Instalaciones Sanitarias</div>
+              <div class="comparison-check"><img src="1762561418_texto-ok-f-1-1.png" alt="check"></div>
+              <div class="comparison-check"><img src="1762561418_texto-ok-f-1-1.png" alt="check"></div>
+            </div>
+            
+            <div class="comparison-row">
+              <div class="comparison-feature">Prueba de Humedad</div>
+              <div class="comparison-check"><img src="1762561418_texto-ok-f-1-1.png" alt="check"></div>
+              <div class="comparison-check"><img src="1762561418_texto-ok-f-1-1.png" alt="check"></div>
+            </div>
+            
+            <div class="comparison-row">
+              <div class="comparison-feature">Muros y Paredes</div>
+              <div class="comparison-check">-</div>
+              <div class="comparison-check"><img src="1762561418_texto-ok-f-1-1.png" alt="check"></div>
+            </div>
+            
+            <div class="comparison-row">
+              <div class="comparison-feature">Mediciones Exactas</div>
+              <div class="comparison-check">-</div>
+              <div class="comparison-check"><img src="1762561418_texto-ok-f-1-1.png" alt="check"></div>
+            </div>
+            
+            <div class="comparison-row">
+              <div class="comparison-feature">Acabados de Arquitectura</div>
+              <div class="comparison-check">-</div>
+              <div class="comparison-check"><img src="1762561418_texto-ok-f-1-1.png" alt="check"></div>
+            </div>
+            
+            <div class="comparison-row">
+              <div class="comparison-feature">Instalaciones de Gas</div>
+              <div class="comparison-check">-</div>
+              <div class="comparison-check"><img src="1762561418_texto-ok-f-1-1.png" alt="check"></div>
+            </div>
+            
+            <div class="comparison-row">
+              <div class="comparison-feature">Verificación según RNE</div>
+              <div class="comparison-check">-</div>
+              <div class="comparison-check"><img src="1762561418_texto-ok-f-1-1.png" alt="check"></div>
+            </div>
+          </div>
+          
+          <div style="margin-top: 40px; text-align: center;">
+            <h3 style="color: #f49937; margin-bottom: 20px;">Beneficios Importantes</h3>
+            <ul style="list-style: none; padding: 0; max-width: 800px; margin: 0 auto; text-align: left;">
+              <li style="padding: 10px 0 10px 35px; position: relative;">
+                <img src="1762561418_texto-ok-f-1-1.png" alt="" style="position: absolute; left: 0; top: 10px; width: 25px;">
+                Inspección completa y minuciosa con recomendaciones personalizadas
+              </li>
+              <li style="padding: 10px 0 10px 35px; position: relative;">
+                <img src="1762561418_texto-ok-f-1-1.png" alt="" style="position: absolute; left: 0; top: 10px; width: 25px;">
+                Duración aproximada de 1 a 1.5 horas
+              </li>
+              <li style="padding: 10px 0 10px 35px; position: relative;">
+                <img src="1762561418_texto-ok-f-1-1.png" alt="" style="position: absolute; left: 0; top: 10px; width: 25px;">
+                Sin penalidades por imprevistos o reprogramación
+              </li>
+              <li style="padding: 10px 0 10px 35px; position: relative;">
+                <img src="1762561418_texto-ok-f-1-1.png" alt="" style="position: absolute; left: 0; top: 10px; width: 25px;">
+                Informe con validez legal en 2 horas
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <div class="container">
+          <h2>¿Listo para inspeccionar tu departamento?</h2>
+          <p>Contáctanos ahora y asegura tu inversión</p>
+          
+          <div class="cta-buttons">
+            <a href="#" class="btn-primary _wasap">Contactar por WhatsApp</a>
+            <a href="index.htm#planes" class="btn-secondary">Ver más planes</a>
+          </div>
+        </div>
+      </section>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer" class="footer section">
+        <div class="footer-flex">
+          <div class="flex-item">
+            <a class="brand pull-left" href="index.htm">
+              <img alt="logo" src="images/logo.png" width="250" height="50" loading="lazy">
+            </a>
+          </div>
+
+          <div class="flex-item">
+            <div class="inline-block pull-sm-right">
+              © TuDepaOK 2025. All Rights Resevered
+            </div>
+            <div>
+              <span>
+                <a href="#" target="_blank">
+                  <img alt="Whatsapp" height="64" width="64" src="https://clientes.dongee.com/whatsapp.png" class="btn-whatsapp _wasap" loading="lazy">
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="hide">
+      <a id="wasap" href="https://wa.me/51983893067?text=Hola!%20necesito%20mayor%20información%20sobre%20los%20planes%20de%20inspección%20de%20departamentos." style="font-size: 1px" target="_blank"></a>
+    </div>
+
+    <script defer type="text/javascript" src="ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script defer type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script defer type="text/javascript" src="js/smoothscroll.js"></script>
+    <script defer type="text/javascript" src="js/wow.min.js"></script>
+    <script defer type="text/javascript" src="js/scripts-min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        // WhatsApp functionality
+        document.querySelectorAll("._wasap").forEach((link) => {
+          link.addEventListener("click", (event) => {
+            event.preventDefault();
+            document.getElementById("wasap").click();
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

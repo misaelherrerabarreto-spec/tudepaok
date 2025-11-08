@@ -1,0 +1,451 @@
+Uri: https://tudepaok.pe/
+File Name: C:\Downloaded Web Sites\tudepaok.pe\index-2.htm
+Content Type: text/html
+
+Uri: https://tudepaok.pe/apple-touch-icon-114x114.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\apple-touch-icon-114x114-2.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/apple-touch-icon-72x72.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\apple-touch-icon-72x72-2.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/apple-touch-icon.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\apple-touch-icon-2.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/css/ajax-loader.gif
+File Name: C:\Downloaded Web Sites\tudepaok.pe\css\ajax-loader-1.gif
+Content Type: image/gif
+
+Uri: https://tudepaok.pe/css/animate.css
+File Name: C:\Downloaded Web Sites\tudepaok.pe\css\animate-2.css
+Content Type: text/css
+
+Uri: https://tudepaok.pe/css/bootstrap-min.css
+File Name: C:\Downloaded Web Sites\tudepaok.pe\css\bootstrap-min-2.css
+Content Type: text/css
+
+Uri: https://tudepaok.pe/css/ionicons.min.css
+File Name: C:\Downloaded Web Sites\tudepaok.pe\css\ionicons.min-2.css
+Content Type: text/css
+
+Uri: https://tudepaok.pe/css/linearicons-min.css
+File Name: C:\Downloaded Web Sites\tudepaok.pe\css\linearicons-min-2.css
+Content Type: text/css
+
+Uri: https://tudepaok.pe/css/owl.carousel.css
+File Name: C:\Downloaded Web Sites\tudepaok.pe\css\owl.carousel-2.css
+Content Type: text/css
+
+Uri: https://tudepaok.pe/css/settings-min.css
+File Name: C:\Downloaded Web Sites\tudepaok.pe\css\settings-min-2.css
+Content Type: text/css
+
+Uri: https://tudepaok.pe/css/style-add.css
+File Name: C:\Downloaded Web Sites\tudepaok.pe\css\style-add-2.css
+Content Type: text/css
+
+Uri: https://tudepaok.pe/css/style-min.css
+File Name: C:\Downloaded Web Sites\tudepaok.pe\css\style-min-2.css
+Content Type: text/css
+
+Uri: https://tudepaok.pe/fallas.html
+File Name: C:\Downloaded Web Sites\tudepaok.pe\fallas.html
+Content Type: text/html
+
+Uri: https://tudepaok.pe/favicon.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\favicon-2.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/fonts/ionicons.eot?v=2.0.0
+File Name: C:\Downloaded Web Sites\tudepaok.pe\fonts\ionicons-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://tudepaok.pe/fonts/ionicons.svg?v=2.0.0
+File Name: C:\Downloaded Web Sites\tudepaok.pe\fonts\ionicons-1.svg
+Content Type: image/svg+xml
+
+Uri: https://tudepaok.pe/fonts/ionicons.ttf?v=2.0.0
+File Name: C:\Downloaded Web Sites\tudepaok.pe\fonts\ionicons-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://tudepaok.pe/fonts/ionicons.woff?v=2.0.0
+File Name: C:\Downloaded Web Sites\tudepaok.pe\fonts\ionicons-1.woff
+Content Type: font/x-woff
+
+Uri: https://tudepaok.pe/fonts/Linearicons.ttf
+File Name: C:\Downloaded Web Sites\tudepaok.pe\fonts\Linearicons-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://tudepaok.pe/images/bg/dots.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\bg\dots-2.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/bg/dots2.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\bg\dots2-2.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/clientes/cliente-1-base.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\clientes\cliente-1-base-2.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/clientes/cliente-2-base.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\clientes\cliente-2-base-2.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/clientes/cliente-3-base.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\clientes\cliente-3-base-2.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/clientes/cliente-4-base.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\clientes\cliente-4-base-2.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/clientes/cliente-5-base.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\clientes\cliente-5-base-2.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/image-icons/tiktok.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\image-icons\tiktok-2.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/image-icons/whatsap.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\image-icons\whatsap-2.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/logo.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\logo-2.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/otros/falla1.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\otros\falla1-2.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/images/otros/falla2.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\otros\falla2-2.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/images/otros/falla3.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\otros\falla3-2.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/images/otros/falla4.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\otros\falla4-2.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/images/otros/falla5.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\otros\falla5-2.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/images/otros/nosotros1.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\otros\nosotros1-2.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/images/projects/falla1.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\projects\falla1.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/images/projects/falla10.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\projects\falla10.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/projects/falla11.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\projects\falla11.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/projects/falla2.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\projects\falla2.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/images/projects/falla3.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\projects\falla3.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/images/projects/falla4.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\projects\falla4.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/images/projects/falla5.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\projects\falla5.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/images/projects/falla6.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\projects\falla6.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/images/projects/falla7.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\projects\falla7.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/images/projects/falla8.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\projects\falla8.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/projects/falla9.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\projects\falla9.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/slider/slide1m.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\slider\slide1m-2.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/js/bootstrap.min.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\js\bootstrap.min-2.js
+Content Type: application/javascript
+
+Uri: https://tudepaok.pe/js/owl.carousel.min.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\js\owl.carousel.min-1.js
+Content Type: application/javascript
+
+Uri: https://tudepaok.pe/js/rev-slider-init-min.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\js\rev-slider-init-min.js
+Content Type: application/javascript
+
+Uri: https://tudepaok.pe/js/scripts-min.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\js\scripts-min-2.js
+Content Type: application/javascript
+
+Uri: https://tudepaok.pe/js/smoothscroll.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\js\smoothscroll-2.js
+Content Type: application/javascript
+
+Uri: https://tudepaok.pe/js/wow.min.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\js\wow.min-2.js
+Content Type: application/javascript
+
+pack-bundle\webapp-desktop\static\js\builder-runtime.320ba4ba.js
+Content Type: application/javascript
+
+Uri: https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/rspack-bundle/webapp-desktop/static/js/cache.tux.3d30fed0.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\obj\tiktok_web_login_static\tiktok\webapp\main\rspack-bundle\webapp-desktop\static\js\cache.tux.3d30fed0.js
+Content Type: application/javascript
+
+Uri: https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/rspack-bundle/webapp-desktop/static/js/emotion.init.7f12bd32.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\obj\tiktok_web_login_static\tiktok\webapp\main\rspack-bundle\webapp-desktop\static\js\emotion.init.7f12bd32.js
+Content Type: application/javascript
+
+Uri: https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/rspack-bundle/webapp-desktop/static/js/i18n.f532041b.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\obj\tiktok_web_login_static\tiktok\webapp\main\rspack-bundle\webapp-desktop\static\js\i18n.f532041b.js
+Content Type: application/javascript
+
+Uri: https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/rspack-bundle/webapp-desktop/static/js/npm-dp-byted-tea-sdk-oversea.5fea89cf.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\obj\tiktok_web_login_static\tiktok\webapp\main\rspack-bundle\webapp-desktop\static\js\npm-dp-byted-tea-sdk-oversea.5fea89cf.js
+Content Type: application/javascript
+
+Uri: https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/rspack-bundle/webapp-desktop/static/js/npm-react.a21a4b00.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\obj\tiktok_web_login_static\tiktok\webapp\main\rspack-bundle\webapp-desktop\static\js\npm-react.a21a4b00.js
+Content Type: application/javascript
+
+Uri: https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/rspack-bundle/webapp-desktop/static/js/npm-rxjs.a01e2708.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\obj\tiktok_web_login_static\tiktok\webapp\main\rspack-bundle\webapp-desktop\static\js\npm-rxjs.a01e2708.js
+Content Type: application/javascript
+
+Uri: https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/rspack-bundle/webapp-desktop/static/js/npm-sigi.8b2ef83b.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\obj\tiktok_web_login_static\tiktok\webapp\main\rspack-bundle\webapp-desktop\static\js\npm-sigi.8b2ef83b.js
+Content Type: application/javascript
+
+Uri: https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/rspack-bundle/webapp-desktop/static/js/player.init.62d50dc9.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\obj\tiktok_web_login_static\tiktok\webapp\main\rspack-bundle\webapp-desktop\static\js\player.init.62d50dc9.js
+Content Type: application/javascript
+
+Uri: https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/rspack-bundle/webapp-desktop/static/js/slardar.27c411c1.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\obj\tiktok_web_login_static\tiktok\webapp\main\rspack-bundle\webapp-desktop\static\js\slardar.27c411c1.js
+Content Type: application/javascript
+
+Uri: https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/rspack-bundle/webapp-desktop/static/js/webapp-desktop.6c608ac9.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\obj\tiktok_web_login_static\tiktok\webapp\main\rspack-bundle\webapp-desktop\static\js\webapp-desktop.6c608ac9.js
+Content Type: application/javascript
+
+Uri: https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.328/webmssdk.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\obj\tiktok_web_login_static\webmssdk\1.0.0.328\webmssdk.js
+Content Type: application/javascript
+
+Uri: https://tudepaok.pe/
+File Name: C:\Downloaded Web Sites\tudepaok.pe\index-1.htm
+Content Type: text/html
+
+Uri: https://tudepaok.pe/apple-touch-icon-114x114.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\apple-touch-icon-114x114-1.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/apple-touch-icon-72x72.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\apple-touch-icon-72x72-1.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/apple-touch-icon.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\apple-touch-icon-1.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/clientes.html
+File Name: C:\Downloaded Web Sites\tudepaok.pe\clientes.html
+Content Type: text/html
+
+Uri: https://tudepaok.pe/css/animate.css
+File Name: C:\Downloaded Web Sites\tudepaok.pe\css\animate-1.css
+Content Type: text/css
+
+Uri: https://tudepaok.pe/css/bootstrap-min.css
+File Name: C:\Downloaded Web Sites\tudepaok.pe\css\bootstrap-min-1.css
+Content Type: text/css
+
+Uri: https://tudepaok.pe/css/ionicons.min.css
+File Name: C:\Downloaded Web Sites\tudepaok.pe\css\ionicons.min-1.css
+Content Type: text/css
+
+Uri: https://tudepaok.pe/css/linearicons-min.css
+File Name: C:\Downloaded Web Sites\tudepaok.pe\css\linearicons-min-1.css
+Content Type: text/css
+
+Uri: https://tudepaok.pe/css/owl.carousel.css
+File Name: C:\Downloaded Web Sites\tudepaok.pe\css\owl.carousel-1.css
+Content Type: text/css
+
+Uri: https://tudepaok.pe/css/settings-min.css
+File Name: C:\Downloaded Web Sites\tudepaok.pe\css\settings-min-1.css
+Content Type: text/css
+
+Uri: https://tudepaok.pe/css/style-add.css
+File Name: C:\Downloaded Web Sites\tudepaok.pe\css\style-add-1.css
+Content Type: text/css
+
+Uri: https://tudepaok.pe/css/style-min.css
+File Name: C:\Downloaded Web Sites\tudepaok.pe\css\style-min-1.css
+Content Type: text/css
+
+Uri: https://tudepaok.pe/favicon.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\favicon-1.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/bg/dots.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\bg\dots-1.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/bg/dots2.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\bg\dots2-1.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/clientes/cliente-1-base.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\clientes\cliente-1-base-1.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/clientes/cliente-1.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\clientes\cliente-1.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/clientes/cliente-2-base.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\clientes\cliente-2-base-1.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/clientes/cliente-2.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\clientes\cliente-2.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/clientes/cliente-3-base.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\clientes\cliente-3-base-1.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/clientes/cliente-3.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\clientes\cliente-3.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/clientes/cliente-4-base.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\clientes\cliente-4-base-1.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/clientes/cliente-4.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\clientes\cliente-4.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/clientes/cliente-5-base.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\clientes\cliente-5-base-1.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/clientes/cliente-5.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\clientes\cliente-5.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/clientes/cliente-6.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\clientes\cliente-6.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/image-icons/icon-quote.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\image-icons\icon-quote.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/image-icons/tiktok.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\image-icons\tiktok-1.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/image-icons/whatsap.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\image-icons\whatsap-1.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/logo.png
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\logo-1.png
+Content Type: image/png
+
+Uri: https://tudepaok.pe/images/otros/falla1.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\otros\falla1-1.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/images/otros/falla2.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\otros\falla2-1.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/images/otros/falla3.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\otros\falla3-1.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/images/otros/falla4.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\otros\falla4-1.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/images/otros/falla5.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\otros\falla5-1.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/images/otros/nosotros1.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\otros\nosotros1-1.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/images/slider/slide1m.jpg
+File Name: C:\Downloaded Web Sites\tudepaok.pe\images\slider\slide1m-1.jpg
+Content Type: image/jpeg
+
+Uri: https://tudepaok.pe/js/bootstrap.min.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\js\bootstrap.min-1.js
+Content Type: application/javascript
+
+Uri: https://tudepaok.pe/js/owl.carousel.min.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\js\owl.carousel.min.js
+Content Type: application/javascript
+
+Uri: https://tudepaok.pe/js/scripts-min.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\js\scripts-min-1.js
+Content Type: application/javascript
+
+Uri: https://tudepaok.pe/js/smoothscroll.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\js\smoothscroll-1.js
+Content Type: application/javascript
+
+Uri: https://tudepaok.pe/js/wow.min.js
+File Name: C:\Downloaded Web Sites\tudepaok.pe\js\wow.min-1.js
+Content Type: application/javascript
+
+Uri: https://www.facebook.com/tudepaokpe
+File Name: C:\Downloaded Web Sites\tudepaok.pe\tudepaokpe.html
+Content Type: text/html
+
+Uri: https://www.googletagmanager.com/ns.html?id=GTM-P63W7K9Z
+File Name: C:\Downloaded Web Sites\tudepaok.pe\ns.html
+Content Type: text/html
+
+Uri: https://www.instagram.com/tudepaok.peru/
+File Name: C:\Downloaded Web Sites\tudepaok.pe\tudepaok.peru\index.htm
+Content Type: text/html
+
+Uri: https://www.tiktok.com/@tudepaok?_t=8k5IpJ04zeY&_r=1
+File Name: C:\Downloaded Web Sites\tudepaok.pe\@tudepaok.html
+Content Type: text/html
+

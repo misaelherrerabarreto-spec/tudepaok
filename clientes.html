@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-P63W7K9Z");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clientes</title>
+    <meta
+      name="description"
+      content="Inspección profesional de departamentos en Lima | Evita gastos de miles de soles: verificamos metraje real, instalaciones y acabados antes de recibir 983893067"
+    />
+    <meta
+      name="keywords"
+      content="tudepaok, tu depa, tu depa ok, depa, depa ok, departamento, inspeccion de departamento"
+    />
+    <meta name="author" content="sarone" />
+    <link href="css/style-min.css" rel="stylesheet" media="all" />
+    <link href="css/style-add.css" rel="stylesheet" media="all" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="apple-touch-icon-114x114.png"
+    />
+
+    <style>
+      /* Contenedor de testimonios mejorado */
+      .testimonial-card {
+        background: #fff;
+        border-radius: 8px;
+        padding: 40px 25px 30px;
+        margin: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        position: relative;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        min-height: 580px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .testimonial-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+      }
+
+      /* Icono de comillas como imagen */
+      .testimonial-card .image-quote {
+        position: absolute;
+        top: 370px;
+        right: 10px;
+        width: 32px !important;
+        height: 27px;
+        opacity: 0.5;
+      }
+
+      /* Contenedor de la imagen del cliente */
+      .testimonial-image-wrapper {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .testimonial-client-image {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        max-height: 380px;
+        border-radius: 8px;
+        object-fit: cover;
+        object-position: center top;
+        border: 3px solid #e8e8e8;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        display: block;
+      }
+
+      /* Texto del testimonio */
+      .testimonial-text {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 25px;
+        font-style: italic;
+        flex-grow: 1;
+        text-align: center;
+        padding: 0 10px;
+      }
+
+      /* Información del cliente */
+      .testimonial-author {
+        text-align: center;
+        border-top: 1px solid #e0e0e0;
+        padding-top: 20px;
+        margin-top: auto;
+      }
+
+      .testimonial-author-name {
+        font-size: 15px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 5px;
+      }
+
+      .testimonial-author-role {
+        font-size: 12px;
+        color: #999;
+        font-weight: 400;
+      }
+
+      /* Ajustes para el carousel */
+      .testimonials-carousel .owl-stage-outer {
+        padding: 20px 0 20px;
+      }
+
+      .testimonials-carousel .owl-item {
+        display: flex;
+        align-items: stretch;
+      }
+
+      /* Navegación abajo del carousel */
+      .testimonials-carousel .owl-nav {
+        position: relative;
+        top: auto;
+        transform: none;
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .testimonials-carousel .owl-prev,
+      .testimonials-carousel .owl-next {
+        position: relative;
+        left: auto;
+        right: auto;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background: #f5f5f5;
+        border-radius: 50%;
+        margin: 0 10px;
+        font-size: 24px;
+        color: #333;
+        transition: all 0.3s ease;
+      }
+
+      .testimonials-carousel .owl-prev:hover,
+      .testimonials-carousel .owl-next:hover {
+        background: #ff9527;
+        color: #fff;
+      }
+
+      .testimonials-carousel .owl-dots {
+        margin-top: 20px;
+      }
+
+      /* Ajuste para 4 columnas en desktop */
+      @media (min-width: 1200px) {
+        .testimonials-carousel {
+          max-width: 1500px;
+          margin: 0 auto;
+        }
+
+        .testimonial-card {
+          padding: 35px 20px 25px;
+        }
+      }
+
+      @media (min-width: 1400px) {
+        .testimonials-carousel {
+          max-width: 1600px;
+        }
+      }
+
+      /* Responsive */
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .testimonial-card {
+          min-height: 600px;
+        }
+      }
+
+      @media (max-width: 991px) {
+        .testimonial-card {
+          min-height: auto;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .testimonial-card {
+          padding: 30px 20px 25px;
+          min-height: auto;
+        }
+
+        .testimonial-text {
+          font-size: 14px;
+        }
+
+        .testimonial-client-image {
+          max-width: 240px;
+          max-height: 350px;
+        }
+
+        .testimonial-card .image-quote {
+          width: 28px;
+          height: 28px;
+        }
+
+        .testimonials-carousel .owl-prev,
+        .testimonials-carousel .owl-next {
+          width: 45px;
+          height: 45px;
+          line-height: 45px;
+          font-size: 20px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .testimonial-card {
+          padding: 25px 15px 20px;
+          margin: 10px;
+        }
+
+        .testimonial-client-image {
+          max-width: 200px;
+          max-height: 300px;
+        }
+
+        .testimonial-text {
+          font-size: 13px;
+          line-height: 1.6;
+        }
+
+        .testimonial-card .image-quote {
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      /* >>> CAMBIO REALIZADO: Ocultar icono de comillas en móvil <<< */
+      @media (max-width: 767px) {
+        .testimonial-card .image-quote {
+          display: none !important;
+        }
+      }
+
+      /* Título de sección mejorado */
+      .section-testimonials-title {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .section-testimonials-title .section-subtitle2 {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .section-testimonials-title p {
+        color: #666;
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+
+      /* >>> NUEVOS ESTILOS AQUÍ <<< */
+
+      /* Ocultar en móvil, mostrar en desktop */
+      .titulo-cliente,
+      .subtitulo-cliente {
+        display: block;
+      }
+
+      /* Ocultar en desktop, mostrar solo en móvil */
+      .subtitulo-cliente-movile {
+        display: none;
+      }
+
+      /* AJUSTES PARA MÓVIL */
+      @media (max-width: 767px) {
+        /* Ocultar título y subtítulo desktop */
+        .titulo-cliente,
+        .subtitulo-cliente {
+          display: none !important;
+        }
+
+        /* Mostrar subtítulo móvil */
+        .subtitulo-cliente-movile {
+          display: block !important;
+          text-align: left;
+          padding: 0 5px;
+          margin-top: 0 !important;
+          margin-bottom: 15px !important;
+        }
+
+        .subtitulo-cliente-movile .section-subtitle2 {
+          font-size: 0.95rem;
+          font-weight: 400;
+          line-height: 1.4;
+          color: #666;
+          margin: 0 !important;
+          letter-spacing: 0;
+        }
+
+        /* Ajustar sección más arriba */
+        .section-projects.section {
+          padding-top: 0.3rem !important;
+          padding-bottom: 1.5rem !important;
+        }
+
+        /* Reducir espacio del carousel */
+        .testimonials-carousel .owl-stage-outer {
+          padding: 10px 0 15px !important;
+        }
+
+        /* Ocultar navegación owl-nav */
+        .owl-nav,
+        div.owl-nav,
+        .testimonials-carousel .owl-nav,
+        .owl-carousel .owl-nav {
+          display: none !important;
+          visibility: hidden !important;
+          opacity: 0 !important;
+          height: 0 !important;
+          width: 0 !important;
+          position: absolute !important;
+          left: -9999px !important;
+        }
+
+        .owl-prev,
+        .owl-next,
+        .testimonials-carousel .owl-prev,
+        .testimonials-carousel .owl-next {
+          display: none !important;
+          visibility: hidden !important;
+        }
+
+        /* Mostrar dots */
+        .testimonials-carousel .owl-dots {
+          display: block !important;
+          margin-top: 20px !important;
+          text-align: center !important;
+        }
+
+        .testimonials-carousel .owl-dot {
+          display: inline-block !important;
+        }
+
+        .testimonials-carousel .owl-dot span {
+          width: 10px !important;
+          height: 10px !important;
+          margin: 5px 7px !important;
+          background: #ddd !important;
+          display: inline-block !important;
+          border-radius: 50% !important;
+        }
+
+        .testimonials-carousel .owl-dot.active span {
+          background: #ff9527 !important;
+        }
+      }
+
+      /* AJUSTES PARA MÓVILES PEQUEÑOS */
+      @media (max-width: 480px) {
+        .section-projects.section {
+          padding-top: 0.2rem !important;
+          padding-bottom: 1.2rem !important;
+        }
+
+        .subtitulo-cliente-movile {
+          margin-bottom: 10px !important;
+        }
+
+        .subtitulo-cliente-movile .section-subtitle2 {
+          font-size: 0.9rem;
+        }
+      }
+
+      /* RESTAURAR NAVEGACIÓN EN DESKTOP */
+      @media (min-width: 768px) {
+        .testimonials-carousel .owl-nav {
+          display: block !important;
+          visibility: visible !important;
+          position: relative !important;
+          left: auto !important;
+        }
+
+        .testimonials-carousel .owl-prev,
+        .testimonials-carousel .owl-next {
+          display: inline-block !important;
+          visibility: visible !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-P63W7K9Z"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Loader -->
+    <div class="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
+
+    <div class="wrapper boxed">
+      <!-- Content CLick Capture-->
+      <div class="click-capture"></div>
+
+      <!-- Sidebar Menu-->
+      <div class="menu">
+        <span class="close-menu icon-cross right-boxed"></span>
+        <div class="menu-lang right-boxed">
+          <a href="" class="active">Es</a>
+        </div>
+        <nav class="nav mobile-menu">
+          <ul class="menu-list right-boxed">
+            <li><a href="https://tudepaok.pe/#main">Inicio</a></li>
+            <li><a href="https://tudepaok.pe/#about">Nosotros</a></li>
+            <li><a href="https://tudepaok.pe/#proceso">Procesos</a></li>
+            <li><a href="https://tudepaok.pe/#planes">Planes</a></li>
+            <li><a href="https://tudepaok.pe/#clientes">Clientes</a></li>
+            <li><a href="https://tudepaok.pe/#contacts">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="menu-footer right-boxed">
+          <div class="social-list">
+            <a
+              href="https://www.tiktok.com/@tudepaok?_t=8k5IpJ04zeY&_r=1"
+              class="icon fa-brands fa-tiktok"
+              style="font-size: 20px; padding-top: 4px"
+              target="_blank"
+              aria-label="tiktok"
+            >
+              <img
+                src="/images/image-icons/tiktok.png"
+                style="width: 24px"
+                alt="tiktok"
+              />
+            </a>
+            <a
+              href="https://wa.me/51983893067?text=Hola!%20necesito%20mayor%20información%20sobre%20la%20inspección%20de%20departamentos."
+              class="icon"
+              style="font-size: 20px; padding-top: 4px"
+              target="_blank"
+              aria-label="whatsap"
+            >
+              <img
+                src="/images/image-icons/whatsap.png"
+                style="margin-top: -5px"
+                alt="whatsap"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/tudepaokpe"
+              class="icon ion-social-facebook"
+              target="_blank"
+              aria-label="facebook"
+            ></a>
+            <a
+              href="https://www.instagram.com/tudepaok.peru"
+              class="icon ion-social-instagram"
+              target="_blank"
+              aria-label="instagram"
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/tudepaok"
+              class="icon ion-social-linkedin"
+              target="_blank"
+              aria-label="linkedin"
+            ></a>
+          </div>
+          <div class="copy">© TuDepaOK 2025. All Rights Reseverd</div>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <header class="navbar boxed js-navbar">
+        <a class="brand" href="#">
+          <img
+            alt="logo"
+            src="/images/logo.png"
+            width="80"
+            height="69"
+            loading="lazy"
+          />
+        </a>
+
+        <!-- Phone -->
+        <address class="navbar-address visible-md visible-xl">
+          contacto: <span class="text-dark">51 983 893 067</span>
+        </address>
+
+        <!-- Button -->
+        <button
+          id="btnNavBar"
+          type="button"
+          title="NavBar"
+          class="navbar-toggle hidden-lg"
+          data-toggle="collapse"
+          data-target="#navbar-collapse"
+          aria-expanded="false"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <!-- Social -->
+        <div class="social-list hidden-xs">
+          <a
+            href="https://www.tiktok.com/@tudepaok?_t=8k5IpJ04zeY&_r=1"
+            class="icon fa-brands fa-tiktok"
+            style="font-size: 20px; padding-top: 4px"
+            target="_blank"
+            aria-label="tiktok"
+          >
+            <img
+              src="/images/image-icons/tiktok.png"
+              style="width: 24px"
+              alt="tiktok"
+            />
+          </a>
+          <a
+            href="https://wa.me/51983893067?text=Hola!%20necesito%20mayor%20información%20sobre%20la%20inspección%20de%20departamentos."
+            class="icon"
+            style="font-size: 20px; padding-top: 4px"
+            target="_blank"
+            aria-label="whatsap"
+          >
+            <img
+              src="/images/image-icons/whatsap.png"
+              style="margin-top: -5px"
+              alt="whatsap"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/tudepaokpe"
+            class="icon ion-social-facebook"
+            target="_blank"
+            aria-label="facebook"
+          ></a>
+          <a
+            href="https://www.instagram.com/tudepaok.peru"
+            class="icon ion-social-instagram"
+            target="_blank"
+            aria-label="instagram"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/tudepaok"
+            class="icon ion-social-linkedin"
+            target="_blank"
+            aria-label="linkedin"
+          ></a>
+        </div>
+
+        <!-- Spacer -->
+        <div class="navbar-spacer pull-right visible-lg"></div>
+
+        <!-- Navigation -->
+        <nav class="nav navigation visible-lg">
+          <ul>
+            <li><a href="https://tudepaok.pe/#main">Inicio</a></li>
+            <li><a href="https://tudepaok.pe/#about">Nosotros</a></li>
+            <li><a href="https://tudepaok.pe/#proceso">Procesos</a></li>
+            <li><a href="https://tudepaok.pe/#planes">Planes</a></li>
+            <li><a href="https://tudepaok.pe/#clientes">Clientes</a></li>
+            <li><a href="https://tudepaok.pe/#contacts">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Section Testimonios Mejorados -->
+      <section
+        class="section-projects section"
+        style="padding-top: 3rem; padding-bottom: 5rem"
+      >
+        <div class="container-fluid" style="max-width: 1600px; padding: 0 15px">
+          <div class="titulo-cliente">
+            <h2 class="section-title section-about-title tituloMonserrat">
+              CLIENTES
+            </h2>
+            <div
+              class="title-hr wow fadeInLeft"
+              style="visibility: visible; animation-name: fadeInLeft"
+            ></div>
+          </div>
+          <div class="section-testimonials-title subtitulo-cliente">
+            <h2>Testimonios reales de personas que confiaron en nosotros</h2>
+          </div>
+          <div class="section-testimonials-title subtitulo-cliente-movile">
+            <h2>Testimonios de clientes</h2>
+          </div>
+
+          <div class="testimonials-carousel owl-carousel">
+            <!-- Testimonio 1 -->
+            <div class="testimonial-card">
+              <img
+                class="image-quote"
+                src="images/image-icons/icon-quote.png"
+                alt=""
+              />
+
+              <div class="testimonial-image-wrapper">
+                <img
+                  src="/images/clientes/cliente-1.png"
+                  alt="Cliente 1"
+                  class="testimonial-client-image"
+                  loading="lazy"
+                />
+              </div>
+
+              <p class="testimonial-text">
+                "Excelente, el equipo es muy detallista, se han tomado el tiempo
+                de revisar cada lado del departamento. Muy profesionales y
+                atentos."
+              </p>
+
+              <div class="testimonial-author">
+                <div class="testimonial-author-name">Marggie Morales Leyva</div>
+                <div class="testimonial-author-role">
+                  Chorrillos, Edifcio Friendz 2
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonio 2 -->
+            <div class="testimonial-card">
+              <img
+                class="image-quote"
+                src="images/image-icons/icon-quote.png"
+                alt=""
+              />
+
+              <div class="testimonial-image-wrapper">
+                <img
+                  src="/images/clientes/cliente-2.png"
+                  alt="Cliente 2"
+                  class="testimonial-client-image"
+                  loading="lazy"
+                />
+              </div>
+
+              <p class="testimonial-text">
+                "Muy bueno, estoy preocupado por todo lo que han encontrado en
+                el depa, pero me han dado la calma que necesito y soluciones
+                concretas."
+              </p>
+
+              <div class="testimonial-author">
+                <div class="testimonial-author-name">Ronaldo Sonco Casan</div>
+                <div class="testimonial-author-role">
+                  Chorrillos, Edifcio Friendz 2
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonio 3 -->
+            <div class="testimonial-card">
+              <img
+                class="image-quote"
+                src="images/image-icons/icon-quote.png"
+                alt=""
+              />
+
+              <div class="testimonial-image-wrapper">
+                <img
+                  src="/images/clientes/cliente-3.png"
+                  alt="Cliente 3"
+                  class="testimonial-client-image"
+                  loading="lazy"
+                />
+              </div>
+
+              <p class="testimonial-text">
+                "Brindaron muy buen servicio, han visto errores que yo no lo
+                hubiera visto. Lo recomendaría totalmente, son muy
+                profesionales."
+              </p>
+
+              <div class="testimonial-author">
+                <div class="testimonial-author-name">Olga Romero Bardalez</div>
+                <div class="testimonial-author-role">
+                  Lince, Edif. Vallejo Living
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonio 4 -->
+            <div class="testimonial-card">
+              <img
+                class="image-quote"
+                src="images/image-icons/icon-quote.png"
+                alt=""
+              />
+
+              <div class="testimonial-image-wrapper">
+                <img
+                  src="/images/clientes/cliente-4.png"
+                  alt="Cliente 4"
+                  class="testimonial-client-image"
+                  loading="lazy"
+                />
+              </div>
+
+              <p class="testimonial-text">
+                "El equipo profesional ha identificado las fallas oportunamente.
+                Muy recomendado el servicio, excelente atención al cliente."
+              </p>
+
+              <div class="testimonial-author">
+                <div class="testimonial-author-name">Richard Rodas</div>
+                <div class="testimonial-author-role">
+                  La Victoria, Edificio Hara
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonio 5 -->
+            <div class="testimonial-card">
+              <img
+                class="image-quote"
+                src="images/image-icons/icon-quote.png"
+                alt=""
+              />
+
+              <div class="testimonial-image-wrapper">
+                <img
+                  src="/images/clientes/cliente-5.png"
+                  alt="Cliente 5"
+                  class="testimonial-client-image"
+                  loading="lazy"
+                />
+              </div>
+
+              <p class="testimonial-text">
+                "Servicio completo y detallistas en el servicio. Recomendado por
+                la buena calidad y precio. Superaron mis expectativas."
+              </p>
+
+              <div class="testimonial-author">
+                <div class="testimonial-author-name">
+                  Renzo Valencia Castillo
+                </div>
+                <div class="testimonial-author-role">
+                  San Isidro, Edif. Aramburú
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonio 6 -->
+            <div class="testimonial-card">
+              <img
+                class="image-quote"
+                src="images/image-icons/icon-quote.png"
+                alt=""
+              />
+
+              <div class="testimonial-image-wrapper">
+                <img
+                  src="/images/clientes/cliente-6.png"
+                  alt="Cliente 6"
+                  class="testimonial-client-image"
+                  loading="lazy"
+                />
+              </div>
+
+              <p class="testimonial-text">
+                "Lo recomendaría mucho, me ha gustado que me den las
+                recomendaciones. Es necesario el sustento técnico para que la
+                inmobiliaria levante las observaciones."
+              </p>
+
+              <div class="testimonial-author">
+                <div class="testimonial-author-name">
+                  Gissella y Germán Patrón
+                </div>
+                <div class="testimonial-author-role">
+                  Lince, Edif. Residencial Altuars
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="footer" class="footer section">
+        <div class="footer-flex">
+          <div class="flex-item">
+            <a class="brand pull-left" href="#">
+              <img alt="logo" src="/images/logo.png" width="250" height="50" />
+            </a>
+          </div>
+
+          <div class="flex-item">
+            <div class="inline-block pull-sm-right">
+              © TuDepaOK 2024. All Rights Resevered
+            </div>
+            <div>
+              <span>
+                <a
+                  href="https://wa.me/51983893067?text=Hola!%20necesito%20mayor%20información%20sobre%20la%20inspección%20de%20departamentos."
+                  target="_blank"
+                >
+                  <img
+                    alt="Whatsapp"
+                    height="64"
+                    width="64"
+                    src="https://clientes.dongee.com/whatsapp.png"
+                    class="btn-whatsapp"
+                    loading="lazy"
+                  />
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+    ></script>
+    <script defer type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script defer type="text/javascript" src="js/smoothscroll.js"></script>
+    <script defer type="text/javascript" src="js/wow.min.js"></script>
+    <script defer type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script defer type="text/javascript" src="js/scripts-min.js"></script>
+
+    <!-- Script personalizado para testimonios -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        // Inicializar carousel de testimonios
+        $(".testimonials-carousel").owlCarousel({
+          loop: true,
+          margin: 30,
+          nav: true,
+          dots: true,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          autoplayHoverPause: true,
+          smartSpeed: 800,
+          navText: [
+            '<i class="ion-ios-arrow-left"></i>',
+            '<i class="ion-ios-arrow-right"></i>',
+          ],
+          responsive: {
+            0: {
+              items: 1,
+              margin: 15,
+            },
+            576: {
+              items: 2,
+              margin: 20,
+            },
+            992: {
+              items: 3,
+              margin: 25,
+            },
+            1200: {
+              items: 4,
+              margin: 30,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
