@@ -117,14 +117,29 @@
       .sticky-back a:hover{background:#ffa64d}
       /* ===== Responsive tweaks ===== */
       @media(max-width:767px){
-        .feature-item p{font-size:.75rem}
-        .card-check{padding:18px 16px}
-        .card-check h5{font-size:.9rem}
-        .card-check ul.plan li p{font-size:.72rem}
+        .hero-planes{padding:70px 0 54px}
+        .hero-planes .section-title{font-size:1.6rem;line-height:1.2}
+        .hero-planes .section-subtitle2{font-size:.92rem}
         .hero-badges .badge{margin:3px 4px 0 0}
-        .premium-strip{font-size:.78rem}
+        .tab-nav{margin-top:22px;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;padding-bottom:6px}
+        .tab-nav::-webkit-scrollbar{display:none}
+        .tab-nav a{display:inline-block;margin-right:8px;padding:10px 16px}
+        .feature-item p{font-size:.75rem}
+        .card-check{padding:16px 14px}
+        .card-check h5{font-size:.95rem}
+        .card-check ul.plan li p{font-size:.74rem}
+        .premium-strip{font-size:.84rem;flex-direction:column;align-items:flex-start;gap:12px}
         .cta-panel h3{font-size:1.1rem}
-        .premium-strip{flex-direction:column;align-items:flex-start;gap:12px}
+        .gallery .col-sm-4{width:50%;float:left;padding-left:8px;padding-right:8px}
+        .gallery .thumb{margin-bottom:16px}
+        .cta-panel-basic .button,.cta-panel-full .button,.cta-panel-premium .button,.premium-strip .button{width:100%;justify-content:center}
+        .cta-panel-basic .cta-right,.cta-panel-full .cta-right,.cta-panel-premium .cta-right{width:100%}
+        .sticky-back{right:12px;bottom:14px}
+      }
+      @media(max-width:480px){
+        .hero-planes .section-title{font-size:1.45rem}
+        .tab-nav a{padding:8px 14px;font-size:.78rem}
+        .gallery .col-sm-4{width:100%;float:none;padding-left:0;padding-right:0}
       }
     </style>
   </head>
@@ -204,8 +219,7 @@
           </div>
         </div>
       </section>
-      <div class="sticky-back"><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Volver arriba</a></div>
-
+      
       <!-- Plan Básico -->
   <section id="plan-basico" class="section plan-section bg-alt">
         <div class="container">
