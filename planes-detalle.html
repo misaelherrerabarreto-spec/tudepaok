@@ -72,7 +72,8 @@
       .comparison-wrap{margin-top:18px;position:relative}
       .comparison-wrap:before{content:"";position:absolute;inset:0;border-radius:14px;background:linear-gradient(145deg,#eee,#fff);filter:blur(3px);opacity:.35;z-index:-1}
   .comparison-table{width:100%;border-collapse:separate;border-spacing:0;font-size:.85rem;line-height:1.45;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.06);}
-  .comparison-table thead th{background:linear-gradient(135deg,#111,#1c1c1c);color:#fff;font-weight:700;font-size:.85rem;letter-spacing:.4px;padding:10px 12px;border-bottom:1px solid #222}
+  .comparison-table thead th{background:linear-gradient(135deg,#111,#1c1c1c);color:#fff;font-weight:700;font-size:.85rem;letter-spacing:.4px;padding:10px 12px;border-bottom:1px solid #222;text-align:center}
+  .comparison-table thead th:first-child{text-align:left}
       .comparison-table th+th{border-left:1px solid #222}
     .comparison-table tbody td{padding:8px 12px;text-align:center;border-bottom:1px solid #e6e6e6}
       .comparison-table tbody td+td{border-left:1px solid #f0f0f0}
@@ -97,8 +98,8 @@
       .cta-panel .button{margin:0}
       @media(max-width:991px){.cta-panel{flex-direction:column;align-items:flex-start}}
   /* ===== WhatsApp Button ===== */
-  .button-whatsapp{position:relative;overflow:hidden;background:linear-gradient(135deg,#1fb85a 0%,#22c963 45%,#27d86c 75%,#2be678 100%);color:#fff !important;border:1px solid #18a44d;border-radius:40px;padding:12px 22px;display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:600;letter-spacing:.25px;box-shadow:0 6px 18px -2px rgba(27,180,88,.42),0 2px 6px rgba(0,0,0,.25);transition:transform .16s ease, box-shadow .16s ease}
-  .button-whatsapp .ion-social-whatsapp{font-size:19px;line-height:1;background:#fff;color:#1fb85a;border-radius:50%;padding:5px;box-shadow:0 0 0 2px rgba(255,255,255,.5);display:inline-flex;align-items:center;justify-content:center}
+  .button-whatsapp{position:relative;overflow:hidden;background-color: #269781;color:#fff !important;border:1px solid #269781;border-radius:40px;padding:12px 22px;display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:600;letter-spacing:.25px;box-shadow:0 6px 18px -2px rgba(38,151,129),0 2px 6px rgba(0,0,0,.25);transition:transform .16s ease, box-shadow .16s ease}
+  .button-whatsapp .ion-social-whatsapp{font-size:19px;line-height:1;background:#fff;color:#269781;border-radius:50%;padding:5px;box-shadow:0 0 0 2px rgba(255,255,255,.5);display:inline-flex;align-items:center;justify-content:center}
   .button-whatsapp:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.42),transparent 60%);opacity:.5;mix-blend-mode:overlay;transition:.55s}
   .button-whatsapp:after{content:"";position:absolute;top:0;left:-60%;width:50%;height:100%;background:linear-gradient(110deg,transparent 0%,rgba(255,255,255,.75) 40%,transparent 80%);transform:skewX(-25deg);transition:.7s}
   .button-whatsapp:hover{box-shadow:0 10px 26px -3px rgba(27,180,88,.52),0 4px 12px rgba(0,0,0,.28);transform:translateY(-2px)}
@@ -367,7 +368,7 @@
                 <hr />
                 <h6 class="subcat"><span class="ion-ios-people" style="margin-right:6px"></span>Áreas comunes</h6>
                 <ul class="plan text-dark" style="margin-bottom:0">
-                  <li><p>Lobby, SUM, gimnasio, zona de juegos, sala de espera.</p></li>
+                  <li><p>Lobby, salón de usos múltiples (SUM), gimnasio, zona de juegos y otras áreas comunes, según corresponda en el edificio.</p></li>
                   <li><p>Iluminación, ventilación y acabados generales.</p></li>
                   <li><p>Estado de señalización básica y rutas de evacuación visibles.</p></li>
                 </ul>
@@ -397,13 +398,13 @@
             <tbody>
               <tr><td>Instalaciones eléctricas</td><td><span class="badge-small">Sí</span></td><td><span class="badge-small">Sí</span></td><td><span class="badge-small">Sí</span></td></tr>
               <tr><td>Instalaciones sanitarias</td><td><span class="badge-small">Sí</span></td><td><span class="badge-small">Sí</span></td><td><span class="badge-small">Sí</span></td></tr>
-              <tr><td>Instalaciones de gas</td><td><span class="badge-small">Si aplica</span></td><td><span class="badge-small">Si aplica</span></td><td><span class="badge-small">Si aplica</span></td></tr>
+              <tr><td>Instalaciones de gas</td><td><span class="badge-small">Sí</span></td><td><span class="badge-small">Sí</span></td><td><span class="badge-small">Sí</span></td></tr>
               <tr><td>Prueba de humedad</td><td><span class="badge-small">Sí</span></td><td><span class="badge-small">Sí</span></td><td><span class="badge-small">Sí</span></td></tr>
               <tr><td>Dimensiones</td><td>-</td><td><span class="badge-small">Sí</span></td><td><span class="badge-small">Sí</span></td></tr>
               <tr><td>Acabados</td><td>-</td><td><span class="badge-small">Sí</span></td><td><span class="badge-small">Sí</span></td></tr>
               <tr><td>Muros y paredes</td><td>-</td><td><span class="badge-small">Sí</span></td><td><span class="badge-small">Sí</span></td></tr>
-              <tr><td>Segunda visita</td><td>-</td><td>-</td><td><span class="badge-small">Incluye</span></td></tr>
-              <tr><td>Informe complementario</td><td>-</td><td>-</td><td><span class="badge-small">Incluye</span></td></tr>
+              <tr><td>Segunda visita</td><td>-</td><td>-</td><td><span class="badge-small">Sí</span></td></tr>
+              <tr><td>Informe complementario</td><td>-</td><td>-</td><td><span class="badge-small">Sí</span></td></tr>
             </tbody>
           </table>
           </div>
@@ -426,5 +427,27 @@
     <script defer type="text/javascript" src="js/smoothscroll.js"></script>
     <script defer type="text/javascript" src="js/wow.min.js"></script>
     <script defer type="text/javascript" src="js/scripts-min.js"></script>
+    <script>
+      // Highlight the active plan tab based on the URL hash on load and on click
+      document.addEventListener('DOMContentLoaded', function () {
+        var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab-nav a'));
+        function setActiveByHash() {
+          var hash = window.location.hash || '#plan-basico';
+          tabs.forEach(function (t) { t.classList.remove('active'); });
+          var current = document.querySelector('.tab-nav a[href="' + hash + '"]');
+          if (current) current.classList.add('active');
+        }
+        setActiveByHash();
+        // Update active state on tab click for a consistent UI
+        tabs.forEach(function (t) {
+          t.addEventListener('click', function () {
+            tabs.forEach(function (x) { x.classList.remove('active'); });
+            this.classList.add('active');
+          });
+        });
+        // Also respond to hash changes triggered programmatically or by browser navigation
+        window.addEventListener('hashchange', setActiveByHash);
+      });
+    </script>
   </body>
 </html>
