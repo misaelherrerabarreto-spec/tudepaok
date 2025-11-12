@@ -297,3 +297,28 @@ ul.plan li {
 .hide {
   display: none;
 }
+
+/* ---------------------------------------------
+   BENEFICIOS (benefits) layout fix
+   Issue: On some desktop widths the 6th item ("Tecnología de punta") was wrapping
+   alone below creating an unbalanced 3rd row. This enforces a stable 3x2 grid
+   from the large breakpoint upward, while preserving existing 2-column layout
+   on tablets and single column on small screens. Minimal, non-intrusive.
+----------------------------------------------*/
+.benefits .row-services { /* allow flex wrapping without affecting other sections */
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Base keeps Bootstrap sm (>=768) behaviour: two columns via col-sm-6 */
+@media (min-width: 992px) { /* large screens: force 3 columns */
+  .benefits .row-services .col-service {
+    float: none;               /* neutralize float side-effects */
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    box-sizing: border-box;    /* ensure internal padding doesn't overflow width */
+  }
+}
+/* Slight safeguard if extremely wide screens introduce spacing anomalies */
+@media (min-width: 1400px) {
+  .benefits .row-services {justify-content: flex-start;}
+}

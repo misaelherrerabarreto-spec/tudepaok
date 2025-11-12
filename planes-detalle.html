@@ -20,10 +20,10 @@
       .hero-badges{margin-top:14px}
       .hero-badges .badge{display:inline-block;background:#ff9527;color:#111;padding:6px 14px;border-radius:22px;font-size:.75rem;margin:4px 6px 0 0;font-weight:600;letter-spacing:.5px;box-shadow:0 3px 10px rgba(0,0,0,.25)}
       /* ===== Sticky in-page nav ===== */
-      .tab-nav{display:flex;flex-wrap:wrap;gap:10px;margin:36px 0 0}
+  .tab-nav{display:flex;flex-wrap:wrap;gap:10px;margin:36px 0 0;justify-content:flex-start}
       .tab-nav a{background:#181818;color:#fff;padding:10px 20px;border-radius:30px;font-size:.8rem;letter-spacing:.6px;text-decoration:none;transition:.3s;border:1px solid #252525;box-shadow:0 3px 10px rgba(0,0,0,.25)}
       .tab-nav a:hover,.tab-nav a.active{background:#ff9527;color:#111;border-color:#ff9527}
-      @media(min-width:992px){.tab-nav{position:absolute;right:0;top:140px}}
+  @media(min-width:992px){.tab-nav{position:absolute;left:0;top:140px;right:auto;}}
       @media(max-width:767px){.hero-planes{padding:90px 0 70px}.tab-nav{margin-top:28px}}
       /* ===== Sections ===== */
       .plan-section{padding-top:70px}
@@ -32,8 +32,8 @@
       /* ===== Feature grid ===== */
       .feature-grid{margin-top:25px}
       .feature-item{display:flex;align-items:flex-start;margin-bottom:18px}
-      .feature-item h5{margin:0 0 4px;font-size:.95rem;font-weight:600}
-      .feature-item p{font-size:.8rem;line-height:1.45;margin:0}
+  .feature-item h5{margin:0 0 4px;font-size:1rem;font-weight:600}
+  .feature-item p{font-size:.85rem;line-height:1.45;margin:0}
   .feature-icon{font-size:24px;color:#ff9527;margin-right:12px;line-height:1;display:inline-block;min-width:28px;text-align:center}
   .feature-item .ion-ios-time,
   .feature-item .ion-document-text,
@@ -48,7 +48,16 @@
       .card-check:hover:before{opacity:1}
       .card-check h5{display:flex;align-items:center;margin:0 0 12px;font-size:1.02rem}
       .card-check h5 .icon{margin-right:10px;color:#ff9527;font-size:20px}
-      .card-check ul.plan li p{margin:0;font-size:.78rem;line-height:1.5}
+  .card-check ul.plan li p{margin:0;font-size:.85rem;line-height:1.5}
+  /* grouped card internal headings */
+  .card-check-group h6.subcat{margin:12px 0 2px;font-size:.9rem;font-weight:700;color:#ff9527;display:flex;align-items:center;letter-spacing:.3px}
+  .card-check-group h6.subcat:first-of-type{margin-top:4px}
+  .card-check-group hr{border:0;border-top:1px solid #e9e9e9;margin:14px 0}
+  .card-check-group ul.plan{margin-top:0;margin-bottom:6px}
+  /* Premium image sizing */
+  .premium-img{width:100%;height:280px;object-fit:cover;object-position:center;border-radius:12px;border:3px solid #f4f4f4;box-shadow:0 4px 16px rgba(0,0,0,.06);display:block}
+  @media(max-width:991px){.premium-img{height:240px}}
+  @media(max-width:575px){.premium-img{height:200px}}
   /* ===== Gallery ===== */
   .gallery .thumb{position:relative;width:100%;aspect-ratio:1/1;border-radius:14px;border:3px solid #f2f2f2;margin-bottom:26px;box-shadow:0 6px 20px rgba(0,0,0,.08);overflow:hidden}
   .gallery .thumb img{width:100%;height:100%;object-fit:cover;display:block}
@@ -59,12 +68,28 @@
   .premium-strip:after{content:"";position:absolute;inset:0;background:radial-gradient(1000px 200px at 80% -20%,rgba(255,149,39,.16),transparent 60%);pointer-events:none}
   .premium-strip .strip-title{font-weight:700;font-size:1.05rem;margin:0}
   .premium-strip .strip-subtitle{font-weight:400;color:#e6e6e6;font-size:.9rem;margin:2px 0 0}
-      /* ===== Comparison table ===== */
-      .comparison-table{width:100%;border-collapse:collapse;margin-top:16px;font-size:.78rem}
-      .comparison-table th,.comparison-table td{border:1px solid #dedede;padding:10px 8px;text-align:center}
-      .comparison-table th{background:#111;color:#fff;font-weight:600;font-size:.75rem;letter-spacing:.5px}
-      .comparison-table td:first-child{text-align:left;font-weight:600;background:#f6f6f6}
-      .badge-small{display:inline-block;padding:3px 7px;border-radius:12px;font-size:.6rem;font-weight:600;background:#ff9527;color:#111;letter-spacing:.5px}
+    /* ===== Comparison table (sizes aligned with index) ===== */
+      .comparison-wrap{margin-top:18px;position:relative}
+      .comparison-wrap:before{content:"";position:absolute;inset:0;border-radius:14px;background:linear-gradient(145deg,#eee,#fff);filter:blur(3px);opacity:.35;z-index:-1}
+  .comparison-table{width:100%;border-collapse:separate;border-spacing:0;font-size:.85rem;line-height:1.45;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.06);}
+  .comparison-table thead th{background:linear-gradient(135deg,#111,#1c1c1c);color:#fff;font-weight:700;font-size:.85rem;letter-spacing:.4px;padding:10px 12px;border-bottom:1px solid #222}
+      .comparison-table th+th{border-left:1px solid #222}
+    .comparison-table tbody td{padding:8px 12px;text-align:center;border-bottom:1px solid #e6e6e6}
+      .comparison-table tbody td+td{border-left:1px solid #f0f0f0}
+      .comparison-table tbody tr:last-child td{border-bottom:0}
+      .comparison-table tbody td:first-child{text-align:left;font-weight:600;color:#222;background:#fafafa;min-width:140px}
+      .comparison-table tbody tr:nth-child(even) td:not(:first-child){background:#fcfcfc}
+  .badge-small{display:inline-block;padding:3px 8px;border-radius:12px;font-size:.85rem;font-weight:700;background:#ff9527;color:#111;letter-spacing:.3px;box-shadow:0 2px 6px rgba(0,0,0,.12)}
+  @media(max-width:767px){
+  .comparison-table{font-size:.8rem}
+  .comparison-table thead th{font-size:.8rem;padding:8px 10px}
+    .comparison-table tbody td{padding:6px 8px}
+        .comparison-table tbody td:first-child{min-width:120px}
+  .badge-small{font-size:.8rem;padding:3px 7px}
+        .comparison-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+        .comparison-wrap::-webkit-scrollbar{height:6px}
+        .comparison-wrap::-webkit-scrollbar-thumb{background:#ff9527;border-radius:20px}
+      }
       /* ===== CTA Panel ===== */
   .cta-panel{background:linear-gradient(135deg,#171717,#0f0f0f);color:#fff;border-radius:20px;padding:34px 30px;margin-top:34px;display:flex;align-items:center;justify-content:space-between;gap:28px;box-shadow:0 12px 34px rgba(0,0,0,.35);border:1px solid #2a2a2a}
       .cta-panel h3{font-size:1.35rem}
@@ -72,49 +97,27 @@
       .cta-panel .button{margin:0}
       @media(max-width:991px){.cta-panel{flex-direction:column;align-items:flex-start}}
   /* ===== WhatsApp Button ===== */
-  .button-whatsapp{background:linear-gradient(135deg,#25D366,#1ebe5d);color:#fff !important;border:0;border-radius:28px;padding:12px 22px;display:inline-flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.3px;box-shadow:0 10px 26px rgba(37,211,102,.35);transition:transform .15s ease, box-shadow .15s ease, background .2s ease}
-  .button-whatsapp:hover{background:linear-gradient(135deg,#2fe376,#27c06b);box-shadow:0 14px 32px rgba(37,211,102,.45);transform:translateY(-1px)}
-  .button-whatsapp:active{transform:translateY(0)}
-  .button-whatsapp:focus{outline:0;box-shadow:0 0 0 3px rgba(37,211,102,.35),0 10px 26px rgba(37,211,102,.35)}
-  .button-whatsapp .ion-social-whatsapp{font-size:18px;line-height:1}
-  /* ===== CTA Basic variant ===== */
-  .cta-panel-basic{background:linear-gradient(135deg,#ff9527,#ffb468);color:#111;border-radius:22px;padding:34px 30px;margin-top:40px;display:flex;align-items:center;justify-content:space-between;gap:40px;box-shadow:0 14px 40px rgba(0,0,0,.25);position:relative;overflow:hidden}
-  .cta-panel-basic:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at right top,rgba(255,255,255,.6),transparent 70%);opacity:.35;pointer-events:none}
-  .cta-panel-basic h3{margin:0 0 10px;font-size:1.5rem;font-weight:700;letter-spacing:.5px}
-  .cta-panel-basic ul{list-style:none;padding:0;margin:0 0 0 0}
-  .cta-panel-basic ul li{display:flex;align-items:flex-start;font-size:.8rem;margin:0 0 6px}
-  .cta-panel-basic ul li .bullet{width:18px;height:18px;border-radius:50%;background:#111;color:#ff9527;font-size:.7rem;display:flex;align-items:center;justify-content:center;margin-right:8px;font-weight:700;box-shadow:0 2px 6px rgba(0,0,0,.25)}
-  .cta-panel-basic .cta-right{text-align:center}
-  .cta-panel-basic .cta-right .section-subtitle2{color:#222;font-size:.78rem;margin:10px 0 14px}
-  /* ===== CTA Full variant ===== */
-  .cta-panel-full{background:linear-gradient(135deg,#232323,#161616);color:#fff;border-radius:22px;padding:38px 34px;margin-top:46px;display:flex;align-items:center;justify-content:space-between;gap:44px;box-shadow:0 16px 44px rgba(0,0,0,.38);border:1px solid #2e2e2e;position:relative;overflow:hidden}
-  .cta-panel-full:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at left top,rgba(255,149,39,.35),transparent 70%);opacity:.4;pointer-events:none}
-  .cta-panel-full h3{margin:0 0 14px;font-size:1.55rem;font-weight:700;letter-spacing:.6px}
-  .cta-panel-full h3{color:#f7f7f7;text-shadow:0 2px 10px rgba(0,0,0,.55),0 0 1px rgba(0,0,0,.3)}
-  .cta-panel-full ul{list-style:none;padding:0;margin:0}
-  .cta-panel-full ul li{display:flex;align-items:flex-start;font-size:.82rem;margin:0 0 8px}
-  .cta-panel-full ul li .bullet{width:20px;height:20px;border-radius:50%;background:#ff9527;color:#111;font-size:.7rem;display:flex;align-items:center;justify-content:center;margin-right:10px;font-weight:700;box-shadow:0 3px 8px rgba(0,0,0,.4)}
-  .cta-panel-full .cta-right{text-align:center;max-width:300px}
-  .cta-panel-full .cta-right .section-subtitle2{color:#ddd;font-size:.78rem;margin:12px 0 16px}
-  @media(max-width:991px){.cta-panel-full{flex-direction:column;align-items:flex-start;gap:28px}}
-  @media(max-width:767px){.cta-panel-full h3{font-size:1.3rem}.cta-panel-full ul li{font-size:.74rem}}
-  /* ===== CTA Premium variant ===== */
-  .cta-panel-premium{background:linear-gradient(135deg,#ff9527,#ffb668);color:#111;border-radius:24px;padding:40px 38px;margin-top:46px;display:flex;align-items:center;justify-content:space-between;gap:40px;box-shadow:0 18px 50px rgba(0,0,0,.4);position:relative;overflow:hidden;border:1px solid #d97d20}
-  .cta-panel-premium:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at right bottom,rgba(255,255,255,.55),transparent 70%);opacity:.5;pointer-events:none}
-  .cta-panel-premium h3{margin:0 0 14px;font-size:1.6rem;font-weight:700;letter-spacing:.6px}
-  .cta-panel-premium ul{list-style:none;padding:0;margin:0}
-  .cta-panel-premium ul li{display:flex;align-items:flex-start;font-size:.82rem;margin:0 0 8px;color:#222}
-  .cta-panel-premium ul li .bullet{width:20px;height:20px;border-radius:50%;background:#111;color:#ff9527;font-size:.7rem;display:flex;align-items:center;justify-content:center;margin-right:10px;font-weight:700;box-shadow:0 3px 8px rgba(0,0,0,.35)}
-  .cta-panel-premium .cta-right{text-align:center;max-width:320px}
-  .cta-panel-premium .cta-right .section-subtitle2{color:#222;font-size:.78rem;margin:12px 0 16px}
-  @media(max-width:991px){.cta-panel-premium{flex-direction:column;align-items:flex-start;gap:30px}}
-  @media(max-width:767px){.cta-panel-premium h3{font-size:1.3rem}.cta-panel-premium ul li{font-size:.74rem}}
-  @media(max-width:991px){.cta-panel-basic{flex-direction:column;align-items:flex-start;gap:26px}}
-  @media(max-width:767px){.cta-panel-basic h3{font-size:1.25rem}.cta-panel-basic ul li{font-size:.74rem}}
+  .button-whatsapp{position:relative;overflow:hidden;background:linear-gradient(135deg,#1fb85a 0%,#22c963 45%,#27d86c 75%,#2be678 100%);color:#fff !important;border:1px solid #18a44d;border-radius:40px;padding:12px 22px;display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:600;letter-spacing:.25px;box-shadow:0 6px 18px -2px rgba(27,180,88,.42),0 2px 6px rgba(0,0,0,.25);transition:transform .16s ease, box-shadow .16s ease}
+  .button-whatsapp .ion-social-whatsapp{font-size:19px;line-height:1;background:#fff;color:#1fb85a;border-radius:50%;padding:5px;box-shadow:0 0 0 2px rgba(255,255,255,.5);display:inline-flex;align-items:center;justify-content:center}
+  .button-whatsapp:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.42),transparent 60%);opacity:.5;mix-blend-mode:overlay;transition:.55s}
+  .button-whatsapp:after{content:"";position:absolute;top:0;left:-60%;width:50%;height:100%;background:linear-gradient(110deg,transparent 0%,rgba(255,255,255,.75) 40%,transparent 80%);transform:skewX(-25deg);transition:.7s}
+  .button-whatsapp:hover{box-shadow:0 10px 26px -3px rgba(27,180,88,.52),0 4px 12px rgba(0,0,0,.28);transform:translateY(-2px)}
+  .button-whatsapp:hover:after{left:125%}
+  .button-whatsapp:active{transform:translateY(0);box-shadow:0 6px 18px -3px rgba(27,180,88,.55),0 2px 8px rgba(0,0,0,.32)}
+  .button-whatsapp:focus{outline:0;box-shadow:0 0 0 3px rgba(27,180,88,.55),0 8px 20px rgba(27,180,88,.35)}
+  .button-whatsapp span+text{display:inline-block}
+  @media(max-width:767px){.button-whatsapp{padding:11px 20px;font-size:.83rem}}
+  /* ===== Simple centered CTA button ===== */
+  .cta-center{margin:30px 0 10px;text-align:center}
+  .cta-center .button-whatsapp{width:auto;min-width:0;font-size:.85rem;padding:12px 22px}
+  @media(max-width:575px){.cta-center .button-whatsapp{min-width:0;width:100%;}}
       /* ===== Sticky Back to top ===== */
       .sticky-back{position:fixed;right:16px;bottom:20px;z-index:500}
       .sticky-back a{display:inline-block;background:#ff9527;color:#111;font-weight:600;padding:10px 18px;border-radius:30px;font-size:.7rem;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.35);transition:.3s}
       .sticky-back a:hover{background:#ffa64d}
+  /* ===== Beneficios (icons like index PROCESO) ===== */
+  .benefits .benefit-icon{display:block;font-size:32px;color:#111;margin-bottom:8px}
+  .benefits .margintitulo{margin:10px 0 6px}
       /* ===== Responsive tweaks ===== */
       @media(max-width:767px){
         .hero-planes{padding:70px 0 54px}
@@ -124,10 +127,10 @@
         .tab-nav{margin-top:22px;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;padding-bottom:6px}
         .tab-nav::-webkit-scrollbar{display:none}
         .tab-nav a{display:inline-block;margin-right:8px;padding:10px 16px}
-        .feature-item p{font-size:.75rem}
+  .feature-item p{font-size:.8rem}
         .card-check{padding:16px 14px}
         .card-check h5{font-size:.95rem}
-        .card-check ul.plan li p{font-size:.74rem}
+  .card-check ul.plan li p{font-size:.8rem}
         .premium-strip{font-size:.84rem;flex-direction:column;align-items:flex-start;gap:12px}
         .cta-panel h3{font-size:1.1rem}
         .gallery .col-sm-4{width:50%;float:left;padding-left:8px;padding-right:8px}
@@ -206,16 +209,11 @@
         <div class="container hero-inner">
           <h1 class="section-title tituloMonserrat" style="color:#fff">Nuestros Planes de Inspección</h1>
           <p class="section-subtitle2" style="color:#eee;margin-top:12px">Elige el alcance que necesitas: desde lo esencial hasta la evaluación integral con seguimiento.</p>
-          <div class="hero-badges">
-            <span class="badge">Transparente</span>
-            <span class="badge">Rápido</span>
-            <span class="badge">Profesional</span>
-            <span class="badge">Con Sustento Técnico</span>
-          </div>
           <div class="tab-nav">
             <a href="#plan-basico" class="active">Plan Básico</a>
             <a href="#plan-full">Plan Full</a>
             <a href="#plan-premium">Plan Premium</a>
+            <a href="#plan-junta">Plan Junta</a>
           </div>
         </div>
       </section>
@@ -226,75 +224,39 @@
           <h2 class="section-title section-about-title tituloMonserrat">Plan Básico</h2>
           <div class="title-hr wow fadeInLeft"></div>
           <p class="section-subtitle2">Cobertura esencial para garantizar el funcionamiento de instalaciones clave y condiciones de humedad.</p>
-          <div class="row feature-grid">
-            <div class="col-md-6">
-              <div class="feature-item"><span class="feature-icon ion-ios-time" aria-label="Tiempo"></span><div><h5>Tiempo de la inspección</h5><p>Duración aproximada de 1.5 horas a más, según metraje. Sin penalidades por imprevistos o reprogramaciones.</p></div></div>
-              <div class="feature-item"><span class="feature-icon ion-document-text" aria-label="Contrato"></span><div><h5>Revisión del contrato</h5><p>Comparamos lo que firmaste con lo recibido y te orientamos para reclamar si hay diferencias.</p></div></div>
-              <div class="feature-item"><span class="feature-icon ion-person-stalker" aria-label="Equipo"></span><div><h5>Profesionales expertos</h5><p>Equipo de arquitectos e ingenieros con experiencia focalizada en entregas de inmuebles.</p></div></div>
-            </div>
-            <div class="col-md-6">
-              <div class="feature-item"><span class="feature-icon ion-clipboard" aria-label="Informe"></span><div><h5>Informe integral</h5><p>Documento claro y minucioso, con lenguaje entendible y recomendaciones accionables.</p></div></div>
-              <div class="feature-item"><span class="feature-icon ion-speedometer" aria-label="Rápido"></span><div><h5>Entrega rápida</h5><p>Te enviamos el informe con sustento legal en menos de 3 horas tras la visita.</p></div></div>
-              <div class="feature-item"><span class="feature-icon ion-gear-a" aria-label="Tecnología"></span><div><h5>Tecnología de punta</h5><p>Equipos importados para detectar fugas, humedad y fallas invisibles a simple vista.</p></div></div>
-            </div>
-          </div>
           <div class="row" style="margin-top:25px">
-            <div class="col-sm-6">
-              <div class="card-check">
-                <h5><span class="icon icon-diamond2"></span> Instalaciones eléctricas</h5>
+            <div class="col-sm-12">
+              <div class="card-check card-check-group">
+                <h5><span class="icon icon-diamond2"></span> Alcance del Plan Básico</h5>
+                <h6 class="subcat"><span class="ion-flash" style="margin-right:6px"></span>Instalaciones eléctricas</h6>
                 <ul class="plan text-dark" style="margin-bottom:0">
                   <li><p>Interruptores y tomacorrientes.</p></li>
                   <li><p>Tablero eléctrico: voltajes, circuitos y llaves térmicas.</p></li>
                   <li><p>Detección de fugas o conexiones defectuosas.</p></li>
                 </ul>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card-check">
-                <h5><span class="icon icon-diamond2"></span> Instalaciones sanitarias</h5>
+                <hr />
+                <h6 class="subcat"><span class="ion-waterdrop" style="margin-right:6px"></span>Instalaciones sanitarias</h6>
                 <ul class="plan text-dark" style="margin-bottom:0">
                   <li><p>Funcionamiento de griferías, lavaderos, inodoros y duchas.</p></li>
                   <li><p>Fugas de agua con herramienta avanzada de escaneo.</p></li>
                   <li><p>Pendientes y drenajes.</p></li>
                   <li><p>Sellado de accesorios sanitarios.</p></li>
                 </ul>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card-check">
-                <h5><span class="icon icon-diamond2"></span> Instalaciones de gas (si aplica)</h5>
+                <hr />
+                <h6 class="subcat"><span class="ion-fireball" style="margin-right:6px"></span>Instalaciones de gas (si aplica)</h6>
                 <ul class="plan text-dark" style="margin-bottom:0">
                   <li><p>Conexiones y válvulas para detectar fugas con equipos calibrados.</p></li>
                 </ul>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card-check">
-                <h5><span class="icon icon-diamond2"></span> Prueba de humedad ambiental</h5>
+                <hr />
+                <h6 class="subcat"><span class="ion-ios-rainy" style="margin-right:6px"></span>Prueba de humedad ambiental</h6>
                 <ul class="plan text-dark" style="margin-bottom:0">
                   <li><p>Medición y detección de humedad en ambientes del inmueble.</p></li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="row gallery" style="margin-top:10px">
-            <div class="col-sm-4 wow fadeInUp"><div class="thumb"><img src="images/otros/falla1.jpg" alt="Detalle eléctrico" loading="lazy" /></div></div>
-            <div class="col-sm-4 wow fadeInUp" data-wow-delay=".1s"><div class="thumb"><img src="images/projects/falla9.png" alt="Revisión general" loading="lazy" /></div></div>
-            <div class="col-sm-4 wow fadeInUp" data-wow-delay=".2s"><div class="thumb"><img src="images/otros/falla3.jpg" alt="Medición de humedad" loading="lazy" /></div></div>
-          </div>
-          <div class="cta-panel-basic">
-            <div>
-              <h3>Plan Básico: inspección esencial</h3>
-              <ul>
-                <li><span class="bullet">1</span><span>Instalaciones eléctricas y sanitarias verificadas al detalle.</span></li>
-                <li><span class="bullet">2</span><span>Detección temprana de humedad y posibles fugas.</span></li>
-                <li><span class="bullet">3</span><span>Informe claro el mismo día con recomendaciones prácticas.</span></li>
-              </ul>
-            </div>
-            <div class="cta-right">
-              <div class="section-subtitle2">Ideal si estás por recibir tu depa y quieres validar lo fundamental antes de firmar.</div>
-              <a class="button button-160 button-whatsapp _wasap" href="https://wa.me/51983893067?text=Hola!%20Estoy%20interesado%20en%20el%20Plan%20Básico%20de%20inspección.%20¿Podrían%20darme%20más%20detalles?" target="_blank"><span class="ion-social-whatsapp" aria-hidden="true"></span>Solicitar por WhatsApp</a>
-            </div>
+          <div class="cta-center">
+            <a class="button button-whatsapp _wasap" href="https://wa.me/51983893067?text=Hola!%20Estoy%20interesado%20en%20el%20Plan%20Básico%20de%20inspección.%20¿Podrían%20darme%20más%20detalles?" target="_blank"><span class="ion-social-whatsapp" aria-hidden="true"></span>Solicitar Plan Básico</a>
           </div>
         </div>
       </section>
@@ -305,53 +267,35 @@
           <h2 class="section-title section-about-title tituloMonserrat">Plan Full</h2>
           <div class="title-hr wow fadeInLeft"></div>
           <p class="section-subtitle2">La inspección más completa para validar dimensiones, acabados y estado técnico del inmueble antes de recibirlo.</p>
-          <div class="row feature-grid">
-            <div class="col-md-6">
-              <div class="feature-item"><span class="feature-icon ion-ios-time" aria-label="Tiempo"></span><div><h5>Tiempo de la inspección</h5><p>Duración aproximada de 1.5 horas a más, según metraje. Sin penalidades por imprevistos.</p></div></div>
-              <div class="feature-item"><span class="feature-icon ion-document-text" aria-label="Contrato"></span><div><h5>Revisión del contrato</h5><p>Comparación de lo pactado vs. lo entregado para reclamar con sustento.</p></div></div>
-              <div class="feature-item"><span class="feature-icon ion-person-stalker" aria-label="Equipo"></span><div><h5>Profesionales expertos</h5><p>Equipo técnico multidisciplinario para una verificación exhaustiva.</p></div></div>
-            </div>
-            <div class="col-md-6">
-              <div class="feature-item"><span class="feature-icon ion-clipboard" aria-label="Informe"></span><div><h5>Informe integral</h5><p>Totalmente transparente y con recomendaciones personalizadas.</p></div></div>
-              <div class="feature-item"><span class="feature-icon ion-speedometer" aria-label="Rápido"></span><div><h5>Entrega rápida</h5><p>Documento entregado en menos de 3 horas tras la visita.</p></div></div>
-              <div class="feature-item"><span class="feature-icon ion-gear-a" aria-label="Tecnología"></span><div><h5>Tecnología de punta</h5><p>Equipos para detectar fisuras, humedad y desviaciones de metraje.</p></div></div>
-            </div>
-          </div>
           <div class="row" style="margin-top:25px">
-            <div class="col-sm-6"><div class="card-check"><h5><span class="icon icon-diamond2"></span> Dimensiones</h5><ul class="plan text-dark" style="margin-bottom:0"><li><p>Medición del metraje real para validar planos contractuales.</p></li></ul></div></div>
-            <div class="col-sm-6"><div class="card-check"><h5><span class="icon icon-diamond2"></span> Acabados</h5><ul class="plan text-dark" style="margin-bottom:0"><li><p>Pisos: cerámico, porcelanato, vinílico, laminado, SPC.</p></li><li><p>Paredes y techos: pintura, empastado, papel tapiz.</p></li><li><p>Detección de cerámicos rotos o mal instalados.</p></li><li><p>Carpintería: puertas, ventanas, mamparas, closets.</p></li></ul></div></div>
-            <div class="col-sm-6"><div class="card-check"><h5><span class="icon icon-diamond2"></span> Instalaciones eléctricas</h5><ul class="plan text-dark" style="margin-bottom:0"><li><p>Interruptores y tomacorrientes.</p></li><li><p>Tablero eléctrico y llaves térmicas.</p></li><li><p>Fugas o conexiones defectuosas.</p></li></ul></div></div>
-            <div class="col-sm-6"><div class="card-check"><h5><span class="icon icon-diamond2"></span> Instalaciones sanitarias</h5><ul class="plan text-dark" style="margin-bottom:0"><li><p>Griferías, lavaderos, inodoros y duchas.</p></li><li><p>Fugas de agua con escaneo.</p></li><li><p>Pendientes y drenajes.</p></li><li><p>Sellado.</p></li></ul></div></div>
-            <div class="col-sm-6"><div class="card-check"><h5><span class="icon icon-diamond2"></span> Instalaciones de gas (si aplica)</h5><ul class="plan text-dark" style="margin-bottom:0"><li><p>Conexiones y válvulas para detectar fugas.</p></li></ul></div></div>
-            <div class="col-sm-6"><div class="card-check"><h5><span class="icon icon-diamond2"></span> Prueba de humedad ambiental</h5><ul class="plan text-dark" style="margin-bottom:0"><li><p>Detección de humedad en ambientes.</p></li></ul></div></div>
-            <div class="col-sm-6"><div class="card-check"><h5><span class="icon icon-diamond2"></span> Muros y paredes</h5><ul class="plan text-dark" style="margin-bottom:0"><li><p>Fisuras, grietas, bultos y rajaduras.</p></li></ul></div></div>
-          </div>
-          <div class="row gallery" style="margin-top:10px">
-            <div class="col-sm-4 wow fadeInUp"><div class="thumb"><img src="images/otros/falla2.jpg" alt="Detalle de acabados" loading="lazy" /></div></div>
-            <div class="col-sm-4 wow fadeInUp" data-wow-delay=".1s"><div class="thumb"><img src="images/projects/5malespastado.jpg" alt="Revisión de interiores" loading="lazy" /></div></div>
-            <div class="col-sm-4 wow fadeInUp" data-wow-delay=".2s"><div class="thumb"><img src="images/otros/falla6.jpg" alt="Medición técnica" loading="lazy" /></div></div>
-          </div>
-          <div class="premium-strip">
-            <div>
-              <div class="strip-title">¿Te interesa el Plan Premium?</div>
-              <div class="strip-subtitle">Extiende tu Plan Full con una segunda visita para validar el levantamiento de observaciones.</div>
+            <div class="col-sm-12">
+              <div class="card-check card-check-group">
+                <h5><span class="icon icon-diamond2"></span> Alcance del Plan Full</h5>
+                <h6 class="subcat"><span class="ion-qr-scanner" style="margin-right:6px"></span>Dimensiones</h6>
+                <ul class="plan text-dark" style="margin-bottom:0"><li><p>Medición del metraje real para validar planos contractuales.</p></li></ul>
+                <hr />
+                <h6 class="subcat"><span class="ion-paintbrush" style="margin-right:6px"></span>Acabados</h6>
+                <ul class="plan text-dark" style="margin-bottom:0"><li><p>Pisos: cerámico, porcelanato, vinílico, laminado, SPC.</p></li><li><p>Paredes y techos: pintura, empastado, papel tapiz.</p></li><li><p>Detección de cerámicos rotos o mal instalados.</p></li><li><p>Carpintería: puertas, ventanas, mamparas, closets.</p></li></ul>
+                <hr />
+                <h6 class="subcat"><span class="ion-flash" style="margin-right:6px"></span>Instalaciones eléctricas</h6>
+                <ul class="plan text-dark" style="margin-bottom:0"><li><p>Interruptores y tomacorrientes.</p></li><li><p>Tablero eléctrico y llaves térmicas.</p></li><li><p>Fugas o conexiones defectuosas.</p></li></ul>
+                <hr />
+                <h6 class="subcat"><span class="ion-waterdrop" style="margin-right:6px"></span>Instalaciones sanitarias</h6>
+                <ul class="plan text-dark" style="margin-bottom:0"><li><p>Griferías, lavaderos, inodoros y duchas.</p></li><li><p>Fugas de agua con escaneo.</p></li><li><p>Pendientes y drenajes.</p></li><li><p>Sellado.</p></li></ul>
+                <hr />
+                <h6 class="subcat"><span class="ion-fireball" style="margin-right:6px"></span>Instalaciones de gas (si aplica)</h6>
+                <ul class="plan text-dark" style="margin-bottom:0"><li><p>Conexiones y válvulas para detectar fugas.</p></li></ul>
+                <hr />
+                <h6 class="subcat"><span class="ion-ios-rainy" style="margin-right:6px"></span>Prueba de humedad ambiental</h6>
+                <ul class="plan text-dark" style="margin-bottom:0"><li><p>Detección de humedad en ambientes.</p></li></ul>
+                <hr />
+                <h6 class="subcat"><span class="ion-social-buffer" style="margin-right:6px"></span>Muros y paredes</h6>
+                <ul class="plan text-dark" style="margin-bottom:0"><li><p>Fisuras, grietas, bultos y rajaduras.</p></li></ul>
+              </div>
             </div>
-            <a class="button button-140 button-whatsapp _wasap" href="https://wa.me/51983893067?text=Hola!%20Quiero%20información%20del%20Plan%20Premium%20de%20inspección." target="_blank"><span class="ion-social-whatsapp" aria-hidden="true"></span>Solicitar por WhatsApp</a>
           </div>
-          <div class="cta-panel-full">
-            <div>
-              <h3>Plan Full: verificación integral</h3>
-              <ul>
-                <li><span class="bullet">1</span><span>Validación de metraje y dimensiones contra planos.</span></li>
-                <li><span class="bullet">2</span><span>Revisión completa de acabados, muros y carpintería.</span></li>
-                <li><span class="bullet">3</span><span>Detección técnica de fisuras, humedad y desviaciones.</span></li>
-                <li><span class="bullet">4</span><span>Informe claro el mismo día + soporte para reclamos.</span></li>
-              </ul>
-            </div>
-            <div class="cta-right">
-              <div class="section-subtitle2">Ideal si buscas una evaluación exhaustiva antes de recibir tu depa.</div>
-              <a class="button button-160 button-whatsapp _wasap" href="https://wa.me/51983893067?text=Hola!%20Estoy%20interesado%20en%20el%20Plan%20Full%20de%20inspección.%20¿Podrían%20darme%20más%20detalles%20y%20disponibilidad?" target="_blank"><span class="ion-social-whatsapp" aria-hidden="true"></span>Solicitar Plan Full</a>
-            </div>
+          <div class="cta-center">
+            <a class="button button-whatsapp _wasap" href="https://wa.me/51983893067?text=Hola!%20Estoy%20interesado%20en%20el%20Plan%20Full%20de%20inspección.%20¿Podrían%20darme%20más%20detalles%20y%20disponibilidad?" target="_blank"><span class="ion-social-whatsapp" aria-hidden="true"></span>Solicitar Plan Full</a>
           </div>
         </div>
       </section>
@@ -364,28 +308,80 @@
           <p class="section-subtitle2">Incluye todo el alcance del Plan Full + una segunda visita de verificación detallada para asegurar que la inmobiliaria haya levantado cada observación técnica.</p>
           <div class="row">
             <div class="col-md-8">
-              <div class="card-check"><h5><span class="icon icon-diamond2"></span> Segunda visita</h5><ul class="plan text-dark" style="margin-bottom:0"><li><p>Verificación puntual de cada punto observado en la primera inspección.</p></li><li><p>Registro fotográfico comparativo antes / después.</p></li><li><p>Recomendaciones finales para la entrega formal.</p></li></ul></div>
-              <div class="card-check"><h5><span class="icon icon-diamond2"></span> Informe actualizado</h5><ul class="plan text-dark" style="margin-bottom:0"><li><p>Documento complementario que valida levantamientos y señala pendientes críticos (si los hubiera).</p></li></ul></div>
-              <div class="card-check"><h5><span class="icon icon-diamond2"></span> Acompañamiento</h5><ul class="plan text-dark" style="margin-bottom:0"><li><p>Soporte vía WhatsApp para dudas técnicas posteriores a la segunda visita.</p></li></ul></div>
+              <div class="card-check card-check-group">
+                <h5><span class="icon icon-diamond2"></span> Alcance del Plan Premium</h5>
+                <h6 class="subcat"><span class="ion-android-checkbox-outline" style="margin-right:6px"></span>Segunda visita</h6>
+                <ul class="plan text-dark" style="margin-bottom:0"><li><p>Verificación puntual de cada punto observado en la primera inspección.</p></li><li><p>Registro fotográfico comparativo antes / después.</p></li><li><p>Recomendaciones finales para la entrega formal.</p></li></ul>
+                <hr />
+                <h6 class="subcat"><span class="ion-document-text" style="margin-right:6px"></span>Informe actualizado</h6>
+                <ul class="plan text-dark" style="margin-bottom:0"><li><p>Documento complementario que valida levantamientos y señala pendientes críticos (si los hubiera).</p></li></ul>
+                <hr />
+                <h6 class="subcat"><span class="ion-chatbubbles" style="margin-right:6px"></span>Acompañamiento</h6>
+                <ul class="plan text-dark" style="margin-bottom:0"><li><p>Soporte vía WhatsApp para dudas técnicas posteriores a la segunda visita.</p></li></ul>
+              </div>
             </div>
             <div class="col-md-4">
-              <img src="images/otros/nosotros1.jpg" alt="Verificación de levantamientos" class="img-responsive" style="border-radius:12px;border:3px solid #f4f4f4;box-shadow:0 4px 16px rgba(0,0,0,.06)" loading="lazy" />
+              <img src="images/otros/nosotros1.jpg" alt="Verificación de levantamientos" class="img-responsive premium-img" loading="lazy" />
             </div>
           </div>
-          <div class="cta-panel-premium">
-            <div>
-              <h3>Plan Premium: doble verificación</h3>
-              <ul>
-                <li><span class="bullet">1</span><span>Segunda visita para validar levantamiento de cada observación.</span></li>
-                <li><span class="bullet">2</span><span>Registro fotográfico comparativo antes / después.</span></li>
-                <li><span class="bullet">3</span><span>Informe complementario actualizado y priorizado.</span></li>
-                <li><span class="bullet">4</span><span>Acompañamiento técnico vía WhatsApp hasta la entrega final.</span></li>
-              </ul>
+          <div class="cta-center">
+            <a class="button button-whatsapp _wasap" href="https://wa.me/51983893067?text=Hola!%20Estoy%20interesado%20en%20el%20Plan%20Premium%20de%20inspección.%20¿Podrían%20darme%20más%20detalles%20y%20disponibilidad?" target="_blank"><span class="ion-social-whatsapp" aria-hidden="true"></span>Solicitar Plan Premium</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Plan Junta -->
+      <section id="plan-junta" class="section plan-section">
+        <div class="container">
+          <h2 class="section-title section-about-title tituloMonserrat">Plan Junta</h2>
+          <div class="title-hr wow fadeInLeft"></div>
+          <p class="section-subtitle2">Evaluación técnica de las áreas y sistemas comunes para la Junta de Propietarios: funcionamiento, seguridad y estado general de los elementos críticos del edificio.</p>
+          <div class="row" style="margin-top:25px">
+            <div class="col-sm-12">
+              <div class="card-check card-check-group">
+                <h5><span class="icon icon-diamond2"></span> Alcance del Plan Junta</h5>
+                <h6 class="subcat"><span class="ion-android-arrow-up" style="margin-right:6px"></span>Ascensores</h6>
+                <ul class="plan text-dark" style="margin-bottom:0">
+                  <li><p>Revisión visual de cabina, puertas, guías y panel de control.</p></li>
+                  <li><p>Verificación de señalización y certificado de mantenimiento visible.</p></li>
+                </ul>
+                <hr />
+                <h6 class="subcat"><span class="ion-waterdrop" style="margin-right:6px"></span>Cuarto de bombas y presión</h6>
+                <ul class="plan text-dark" style="margin-bottom:0">
+                  <li><p>Estado general de bombas y colectores visibles.</p></li>
+                  <li><p>Verificación de filtraciones, ruidos anómalos y soportes.</p></li>
+                </ul>
+                <hr />
+                <h6 class="subcat"><span class="ion-flash" style="margin-right:6px"></span>Tableros generales</h6>
+                <ul class="plan text-dark" style="margin-bottom:0">
+                  <li><p>Identificación de circuitos y presencia de protecciones.</p></li>
+                  <li><p>Estado físico, ventilación y accesibilidad.</p></li>
+                </ul>
+                <hr />
+                <h6 class="subcat"><span class="ion-fireball" style="margin-right:6px"></span>Sistema contra incendios</h6>
+                <ul class="plan text-dark" style="margin-bottom:0">
+                  <li><p>Extintores: fecha de vencimiento y ubicación.</p></li>
+                  <li><p>Gabinetes y mangueras (si aplica).</p></li>
+                  <li><p>Detectores / alarmas visibles.</p></li>
+                </ul>
+                <hr />
+                <h6 class="subcat"><span class="ion-ios-people" style="margin-right:6px"></span>Áreas comunes</h6>
+                <ul class="plan text-dark" style="margin-bottom:0">
+                  <li><p>Lobby, SUM, gimnasio, zona de juegos, sala de espera.</p></li>
+                  <li><p>Iluminación, ventilación y acabados generales.</p></li>
+                  <li><p>Estado de señalización básica y rutas de evacuación visibles.</p></li>
+                </ul>
+                <hr />
+                <h6 class="subcat"><span class="ion-document-text" style="margin-right:6px"></span>Documentación y mantenimiento</h6>
+                <ul class="plan text-dark" style="margin-bottom:0">
+                  <li><p>Listado de mantenimientos recientes proporcionado por la administración (verificación superficial).</p></li>
+                  <li><p>Observaciones recomendadas para priorizar mejoras.</p></li>
+                </ul>
+              </div>
             </div>
-            <div class="cta-right">
-              <div class="section-subtitle2">Perfecto si quieres cerrar la recepción sin dudas pendientes.</div>
-              <a class="button button-190 button-whatsapp _wasap" href="https://wa.me/51983893067?text=Hola!%20Estoy%20interesado%20en%20el%20Plan%20Premium%20de%20inspección.%20¿Podrían%20darme%20más%20detalles%20y%20disponibilidad?" target="_blank"><span class="ion-social-whatsapp" aria-hidden="true"></span>Solicitar Plan Premium</a>
-            </div>
+          </div>
+          <div class="cta-center">
+            <a class="button button-whatsapp _wasap" href="https://wa.me/51983893067?text=Hola!%20Estoy%20interesado%20en%20el%20Plan%20Junta%20de%20inspecci%C3%B3n%20(ascensores%2C%20bombas%2C%20tableros%2C%20%C3%A1reas%20comunes).%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20detalles%20y%20costos%3F" target="_blank"><span class="ion-social-whatsapp" aria-hidden="true"></span>Solicitar Plan Junta</a>
           </div>
         </div>
       </section>
@@ -395,6 +391,7 @@
         <div class="container">
           <h2 class="section-title section-about-title tituloMonserrat">Comparativa rápida</h2>
           <div class="title-hr wow fadeInLeft"></div>
+          <div class="comparison-wrap">
           <table class="comparison-table">
             <thead><tr><th>Aspecto</th><th>Básico</th><th>Full</th><th>Premium</th></tr></thead>
             <tbody>
@@ -409,6 +406,7 @@
               <tr><td>Informe complementario</td><td>-</td><td>-</td><td><span class="badge-small">Incluye</span></td></tr>
             </tbody>
           </table>
+          </div>
         </div>
       </section>
 
