@@ -322,3 +322,28 @@ ul.plan li {
 @media (min-width: 1400px) {
   .benefits .row-services {justify-content: flex-start;}
 }
+
+/* =============================================
+   Tablet layout fixes for "¿Qué inspeccionamos?" (#servicios)
+   and "PROCESO" (#proceso)
+   Issue: On mid-width screens (tablet ~768-991px) items were using col-sm-6
+   causing 2-column wrap and uneven vertical whitespace; for 3 items sets this
+   produced an orphan below and visual gaps.
+   Solution: Use flexbox to enforce consistent wrapping.
+   - 768-991px: keep 2 columns if desired? Request says elements "se desordenan";
+     We'll standardize to 3 columns from 768px upward for uniformity.
+   - Preserve mobile stacking below 768px.
+   Implementation is additive and non-destructive.
+============================================= */
+@media (min-width: 768px) and (max-width: 991px) {
+  #servicios .row-services,
+  #proceso .row-services {display:flex;flex-wrap:wrap;}
+  #servicios .row-services .col-service,
+  #proceso .row-services .col-service {flex:0 0 33.333%;max-width:33.333%;padding-left:12px;padding-right:12px;}
+  #servicios .row-services .col-service:nth-child(3n+1),
+  #proceso .row-services .col-service:nth-child(3n+1){clear:left;}
+}
+@media (min-width: 992px){
+  #servicios .row-services .col-service,
+  #proceso .row-services .col-service {flex:0 0 33.333%;max-width:33.333%;}
+}
