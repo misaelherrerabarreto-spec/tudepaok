@@ -48,12 +48,15 @@
       .card-check:hover:before{opacity:1}
       .card-check h5{display:flex;align-items:center;margin:0 0 12px;font-size:1.02rem}
       .card-check h5 .icon{margin-right:10px;color:#ff9527;font-size:20px}
-  .card-check ul.plan li p{margin:0;font-size:.85rem;line-height:1.5}
+  .card-check ul.plan{padding-left:22px;margin-top:6px;margin-bottom:8px}
+  .card-check ul.plan li{margin-bottom:5px;line-height:1.65}
+  .card-check ul.plan li:last-child{margin-bottom:0}
+  .card-check ul.plan li p{margin:0;font-size:1.05rem;line-height:1.65;font-family:"Open Sans",sans-serif;text-align:justify}
   /* grouped card internal headings */
-  .card-check-group h6.subcat{margin:12px 0 2px;font-size:.9rem;font-weight:700;color:#ff9527;display:flex;align-items:center;letter-spacing:.3px}
-  .card-check-group h6.subcat:first-of-type{margin-top:4px}
-  .card-check-group hr{border:0;border-top:1px solid #e9e9e9;margin:14px 0}
-  .card-check-group ul.plan{margin-top:0;margin-bottom:6px}
+  .card-check-group h6.subcat{margin:14px 0 6px;font-size:1rem;font-weight:700;color:#ff9527;display:flex;align-items:center;letter-spacing:.3px}
+  .card-check-group h6.subcat:first-of-type{margin-top:6px}
+  .card-check-group hr{border:0;border-top:1px solid #e9e9e9;margin:12px 0}
+  .card-check-group ul.plan{margin-top:6px;margin-bottom:8px}
   /* Premium image sizing */
   .premium-img{width:100%;height:280px;object-fit:cover;object-position:center;border-radius:12px;border:3px solid #f4f4f4;box-shadow:0 4px 16px rgba(0,0,0,.06);display:block}
   @media(max-width:991px){.premium-img{height:240px}}
@@ -71,8 +74,8 @@
     /* ===== Comparison table (sizes aligned with index) ===== */
       .comparison-wrap{margin-top:18px;position:relative}
       .comparison-wrap:before{content:"";position:absolute;inset:0;border-radius:14px;background:linear-gradient(145deg,#eee,#fff);filter:blur(3px);opacity:.35;z-index:-1}
-  .comparison-table{width:100%;border-collapse:separate;border-spacing:0;font-size:.85rem;line-height:1.45;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.06);}
-  .comparison-table thead th{background:linear-gradient(135deg,#111,#1c1c1c);color:#fff;font-weight:700;font-size:.85rem;letter-spacing:.4px;padding:10px 12px;border-bottom:1px solid #222;text-align:center}
+  .comparison-table{width:100%;border-collapse:separate;border-spacing:0;font-size:1.05rem;line-height:1.7;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.06);font-family:"Open Sans",sans-serif}
+  .comparison-table thead th{background:linear-gradient(135deg,#111,#1c1c1c);color:#fff;font-weight:700;font-size:1rem;letter-spacing:.4px;padding:10px 12px;border-bottom:1px solid #222;text-align:center}
   .comparison-table thead th:first-child{text-align:left}
       .comparison-table th+th{border-left:1px solid #222}
     .comparison-table tbody td{padding:8px 12px;text-align:center;border-bottom:1px solid #e6e6e6}
@@ -80,13 +83,13 @@
       .comparison-table tbody tr:last-child td{border-bottom:0}
       .comparison-table tbody td:first-child{text-align:left;font-weight:600;color:#222;background:#fafafa;min-width:140px}
       .comparison-table tbody tr:nth-child(even) td:not(:first-child){background:#fcfcfc}
-  .badge-small{display:inline-block;padding:3px 8px;border-radius:12px;font-size:.85rem;font-weight:700;background:#ff9527;color:#111;letter-spacing:.3px;box-shadow:0 2px 6px rgba(0,0,0,.12)}
+  .badge-small{display:inline-block;padding:3px 8px;border-radius:12px;font-size:1rem;font-weight:700;background:#ff9527;color:#111;letter-spacing:.3px;box-shadow:0 2px 6px rgba(0,0,0,.12)}
   @media(max-width:767px){
-  .comparison-table{font-size:.8rem}
-  .comparison-table thead th{font-size:.8rem;padding:8px 10px}
+  .comparison-table{font-size:1.05rem}
+  .comparison-table thead th{font-size:1rem;padding:8px 10px}
     .comparison-table tbody td{padding:6px 8px}
         .comparison-table tbody td:first-child{min-width:120px}
-  .badge-small{font-size:.8rem;padding:3px 7px}
+  .badge-small{font-size:1rem;padding:3px 7px}
         .comparison-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}
         .comparison-wrap::-webkit-scrollbar{height:6px}
         .comparison-wrap::-webkit-scrollbar-thumb{background:#ff9527;border-radius:20px}
@@ -98,8 +101,8 @@
       .cta-panel .button{margin:0}
       @media(max-width:991px){.cta-panel{flex-direction:column;align-items:flex-start}}
   /* ===== WhatsApp Button ===== */
-  .button-whatsapp{position:relative;overflow:hidden;background-color: #269781;color:#fff !important;border:1px solid #269781;border-radius:40px;padding:12px 22px;display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:600;letter-spacing:.25px;box-shadow:0 6px 18px -2px rgba(38,151,129),0 2px 6px rgba(0,0,0,.25);transition:transform .16s ease, box-shadow .16s ease}
-  .button-whatsapp .ion-social-whatsapp{font-size:19px;line-height:1;background:#fff;color:#269781;border-radius:50%;padding:5px;box-shadow:0 0 0 2px rgba(255,255,255,.5);display:inline-flex;align-items:center;justify-content:center}
+  .button-whatsapp{position:relative;overflow:hidden;background-color: #269781;color:#fff !important;border:1px solid #269781;border-radius:40px;padding:12px 22px;display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:600;font-size:1.05rem;font-family:"Open Sans",sans-serif;letter-spacing:.25px;box-shadow:0 6px 18px -2px rgba(38,151,129),0 2px 6px rgba(0,0,0,.25);transition:transform .16s ease, box-shadow .16s ease}
+  .button-whatsapp .ion-social-whatsapp{font-size:20px;line-height:1;background:#fff;color:#269781;border-radius:50%;padding:5px;box-shadow:0 0 0 2px rgba(255,255,255,.5);display:inline-flex;align-items:center;justify-content:center}
   .button-whatsapp:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.42),transparent 60%);opacity:.5;mix-blend-mode:overlay;transition:.55s}
   .button-whatsapp:after{content:"";position:absolute;top:0;left:-60%;width:50%;height:100%;background:linear-gradient(110deg,transparent 0%,rgba(255,255,255,.75) 40%,transparent 80%);transform:skewX(-25deg);transition:.7s}
   .button-whatsapp:hover{box-shadow:0 10px 26px -3px rgba(27,180,88,.52),0 4px 12px rgba(0,0,0,.28);transform:translateY(-2px)}
@@ -107,10 +110,10 @@
   .button-whatsapp:active{transform:translateY(0);box-shadow:0 6px 18px -3px rgba(27,180,88,.55),0 2px 8px rgba(0,0,0,.32)}
   .button-whatsapp:focus{outline:0;box-shadow:0 0 0 3px rgba(27,180,88,.55),0 8px 20px rgba(27,180,88,.35)}
   .button-whatsapp span+text{display:inline-block}
-  @media(max-width:767px){.button-whatsapp{padding:11px 20px;font-size:.83rem}}
+  @media(max-width:767px){.button-whatsapp{padding:11px 20px;font-size:1.05rem}}
   /* ===== Simple centered CTA button ===== */
   .cta-center{margin:30px 0 10px;text-align:center}
-  .cta-center .button-whatsapp{width:auto;min-width:0;font-size:.85rem;padding:12px 22px}
+  .cta-center .button-whatsapp{width:auto;min-width:0;font-size:1.05rem;padding:12px 22px}
   @media(max-width:575px){.cta-center .button-whatsapp{min-width:0;width:100%;}}
       /* ===== Sticky Back to top ===== */
       .sticky-back{position:fixed;right:16px;bottom:20px;z-index:500}
@@ -128,10 +131,10 @@
         .tab-nav{margin-top:22px;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;padding-bottom:6px}
         .tab-nav::-webkit-scrollbar{display:none}
         .tab-nav a{display:inline-block;margin-right:8px;padding:10px 16px}
-  .feature-item p{font-size:.8rem}
+  .feature-item p{font-size:.85rem}
         .card-check{padding:16px 14px}
         .card-check h5{font-size:.95rem}
-  .card-check ul.plan li p{font-size:.8rem}
+  .card-check ul.plan li p{font-size:1.05rem;line-height:1.7}
         .premium-strip{font-size:.84rem;flex-direction:column;align-items:flex-start;gap:12px}
         .cta-panel h3{font-size:1.1rem}
         .gallery .col-sm-4{width:50%;float:left;padding-left:8px;padding-right:8px}
