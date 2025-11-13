@@ -1373,7 +1373,6 @@
       document.addEventListener(
         "touchstart",
         (event) => {
-          event.preventDefault();
           vermas(event.target.className);
         },
         { passive: true }
@@ -1382,7 +1381,6 @@
       document.addEventListener(
         "touchmove",
         (event) => {
-          event.preventDefault();
           vermas(event.target.className);
         },
         { passive: true }
@@ -1391,7 +1389,6 @@
       document.addEventListener(
         "touchcancel",
         (event) => {
-          event.preventDefault();
           vermas(event.target.className);
         },
         { passive: true }
