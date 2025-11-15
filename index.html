@@ -147,16 +147,16 @@
               <a href="#main">Inicio</a>
             </li>
             <li>
-              <a href="#about">Nosotros</a>
+              <a href="#beneficios">Beneficios</a>
             </li>
             <li>
-              <a href="#proceso">Procesos</a>
+              <a href="#clientes">Clientes</a>
             </li>
             <li>
               <a href="#planes">Planes</a>
             </li>
             <li>
-              <a href="#clientes">Clientes</a>
+              <a href="#about">Nosotros</a>
             </li>
             <li>
               <a href="#contacts">Contacto</a>
@@ -303,16 +303,16 @@
               <a href="#main">Inicio</a>
             </li>
             <li>
-              <a href="#about">Nosotros</a>
+              <a href="#beneficios">Beneficios</a>
             </li>
             <li>
-              <a href="#proceso">Proceso</a>
+              <a href="#clientes">Clientes</a>
             </li>
             <li>
               <a href="#planes">Planes</a>
             </li>
             <li>
-              <a href="#clientes">Clientes</a>
+              <a href="#about">Nosotros</a>
             </li>
             <li>
               <a href="#contacts">Contacto</a>
@@ -399,11 +399,6 @@
           <div class="container">
             <h2 class="section-title section-about-title tituloMonserrat">BENEFICIOS</h2>
             <div class="title-hr wow fadeInLeft"></div>
-            <div class="row">
-              <div class="col-md-12">
-                <strong class="section-subtitle2">Beneficios clave de nuestra inspección profesional</strong>
-              </div>
-            </div>
             <div class="row" style="margin-top:25px">
               <div class="col-md-12">
                 <div class="row-services row">
@@ -676,14 +671,16 @@
                     class="col-team col-xs-6 col-md-4 wow fadeIn"
                     data-wow-delay="0.6s"
                   >
-                    <div
-                      class="add-new-team fallas"
-                      style="cursor: pointer"
-                      height="270"
-                      width="270"
-                    >
-                      <div class="add-new-text">
-                        <div class="inner">Ver más ...</div>
+                    <div class="team-profile">
+                      <div
+                        class="add-new-team fallas"
+                        style="cursor: pointer"
+                        height="270"
+                        width="270"
+                      >
+                        <div class="add-new-text">
+                          <div class="inner">Ver más ...</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1045,6 +1042,58 @@
           </div>
         </section>
 
+        <section
+          id="about"
+          class="section section-about bg-dots"
+          style="padding-bottom: 0px; margin-top: 40px"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="section-title section-about-title tituloMonserrat">
+                  NOSOTROS
+                </h2>
+                <div class="title-hr wow fadeInLeft"></div>
+
+                <p style="padding-top: 25px">
+                  ¿Sabías que más del 95% de los departamentos presentan
+                  observaciones al momento de su entrega? 🏚 Los procesos de
+                  construcción de éstos son manuales y no están libres de
+                  imperfecciones; por eso, nació esta empresa que brinda el
+                  servicio de inspeccionar tu departamento para que lo recibas
+                  en óptimas condiciones y hagas valer las garantías de tu
+                  inversión. 🏢 💵
+                </p>
+
+                <p style="padding-top: 10px">
+                  Somos una Empresa que se preocupa de la recepción e inspección
+                  de tu departamento nuevo. Esta inspección es un examen
+                  detallado del inmueble que revela los problemas ocultos como
+                  daños estructurales, problemas eléctricos, sanitarios,
+                  acabados o el cumplimiento de los metros cuadrados de tu
+                  departamento. ☝🏼
+                </p>
+                <p>
+                  No te arriesgues a recibir una propiedad sin previa
+                  inspección, para que disfrutes tu depa con tranquilidad.
+                </p>
+              </div>
+              <div class="col-md-5 col-md-offset-1">
+                <div class="dots-image">
+                  <img
+                    alt="about"
+                    class="about-img img-responsive"
+                    style="height: 450px; width: 320px"
+                    src="/images/otros/nosotros1.jpg"
+                    loading="lazy"
+                  />
+                  <div class=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- </section> -->
 
         <!-- Section Contacts -->
@@ -1286,9 +1335,7 @@
       document.addEventListener("DOMContentLoaded", (event) => {
         const isMobile = document.querySelector("html").className === "mobile";
         if (isMobile) {
-          Array.from(document.querySelectorAll(".fallas")).forEach((x) => {
-            x.height = 150;
-          });
+          // Height normalization handled via CSS (aspect-ratio) for consistency across breakpoints
           const browser = fnBrowserDetect();
           if (browser === "safari")
             document.querySelector("#btnNavBar").style.marginTop = "-5px";

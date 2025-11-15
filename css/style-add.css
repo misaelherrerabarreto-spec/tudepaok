@@ -76,7 +76,6 @@ p {
   margin: 0 0 10px;
   line-height: 1.7;
   font-family: "Open Sans", sans-serif;
-  text-align: justify;
 }
 
 .section {
@@ -361,4 +360,56 @@ ul.plan li {
 @media (min-width: 992px){
   #servicios .row-services .col-service,
   #proceso .row-services .col-service {flex:0 0 33.333%;max-width:33.333%;}
+}
+
+/* =============================================
+   "Ver más..." button sizing fix for OBSERVACIONES section
+   Issue: .add-new-team element was not matching the 270x270px dimensions
+   of the fallas images on mobile/tablet, causing layout inconsistency.
+   Solution: Mimic .team-profile behavior exactly - position relative and 
+   treat .add-new-team like an image inside .team-profile with width:100% display:block
+============================================= */
+#team .col-team .add-new-team.fallas {
+  padding-top: 0 !important;  /* Override the 100% padding-top from main stylesheet */
+  position: relative;         /* Match .team-profile behavior */
+  width: 100%;                /* Match .team-profile img width:100% */
+  height: auto;               /* Let aspect ratio determine height */
+  aspect-ratio: 1 / 1;        /* Force square ratio like 270x270 images */
+  display: block;             /* Match .team-profile img display:block */
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid #bfbfbf;  /* Restore subtle border without changing size */
+}
+
+/* Keep theme hover behavior (border becomes transparent on hover) */
+#team .col-team .add-new-team.fallas:hover {
+  border-color: transparent;
+}
+
+/* Ensure images in OBSERVACIONES are perfect squares too (match the tile) */
+#team .team-profile img.fallas {
+  width: 100%;
+  height: auto !important;   /* override any presentational height attr or JS */
+  aspect-ratio: 1 / 1;       /* force square */
+  object-fit: cover;         /* fill square without distortion */
+  display: block;            /* remove inline gap */
+}
+
+/* Tablet breakpoint: ensure square ratio maintained */
+@media (min-width: 768px) and (max-width: 991px) {
+  #team .col-team .add-new-team.fallas {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+/* Mobile: maintain square ratio */
+@media (max-width: 767px) {
+  #team .col-team .add-new-team.fallas {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+/* Additional fix: ensure the parent col-team doesn't add unexpected spacing */
+#team .col-team {
+  display: block;
 }
